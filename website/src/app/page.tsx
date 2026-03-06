@@ -285,15 +285,24 @@ export default function Home() {
             <Image
               src="/denvan-holdings/images/logo.png"
               alt="Denvan Holdings"
-              width={140}
-              height={140}
-              style={{ margin: "0 auto 24px", display: "block", borderRadius: 16, boxShadow: "0 0 0 3px rgba(27, 74, 46, 0.5)" }}
+              width={300}
+              height={250}
+              style={{
+                margin: "0 auto 24px",
+                display: "block",
+                objectFit: "contain",
+                height: 200,
+                width: "auto",
+                borderRadius: 16,
+                background: "rgba(255,255,255,0.95)",
+                padding: 16,
+              }}
             />
             <p className="font-playfair" style={{ fontSize: 28, color: "#B8942A", marginBottom: 8 }}>
-              Denvan Holdings LLC
-            </p>
-            <p style={{ color: "#94A3B8", fontSize: 18 }}>
               Building Businesses. Creating Legacy.
+            </p>
+            <p style={{ color: "#94A3B8", fontSize: 16 }}>
+              A multi-industry holding company based in Austin, Texas
             </p>
           </AnimateOnScroll>
         </div>

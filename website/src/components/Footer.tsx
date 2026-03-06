@@ -9,12 +9,21 @@ export default function Footer() {
       <div className="container">
         <div className="footer-top">
           <div>
-            <div style={styles.logoRow}>
-              <Image src="/denvan-holdings/images/logo.png" alt="Denvan Holdings" width={48} height={48} style={{ borderRadius: 10, boxShadow: "0 0 0 2px #1B4A2E" }} />
-              <div>
-                <div style={styles.logoText}>DENVAN HOLDINGS</div>
-                <div style={styles.logoSub}>LLC</div>
-              </div>
+            <div style={{ marginBottom: 20 }}>
+              <Image
+                src="/denvan-holdings/images/logo.png"
+                alt="Denvan Holdings"
+                width={200}
+                height={166}
+                style={{
+                  objectFit: "contain",
+                  height: 100,
+                  width: "auto",
+                  borderRadius: 12,
+                  background: "rgba(255,255,255,0.95)",
+                  padding: 8,
+                }}
+              />
             </div>
             <p style={styles.tagline} className="font-playfair">
               Building Businesses. Creating Legacy.
@@ -78,25 +87,6 @@ const styles: Record<string, React.CSSProperties> = {
     background: "#0D2818",
     color: "#94A3B8",
     padding: "64px 0 0",
-  },
-  logoRow: {
-    display: "flex",
-    alignItems: "center",
-    gap: 14,
-    marginBottom: 16,
-  },
-  logoText: {
-    fontWeight: 700,
-    fontSize: 18,
-    color: "#FFFFFF",
-    letterSpacing: "0.05em",
-    lineHeight: 1.2,
-  },
-  logoSub: {
-    fontSize: 10,
-    color: "#64748B",
-    letterSpacing: "0.15em",
-    fontWeight: 500,
   },
   tagline: {
     color: "#B8942A",

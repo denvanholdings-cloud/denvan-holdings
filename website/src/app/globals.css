@@ -565,6 +565,11 @@ img {
     text-align: center;
   }
 
+  /* Header logo smaller on mobile */
+  header img {
+    height: 50px !important;
+  }
+
   /* Buttons full-width on mobile */
   .btn {
     padding: 12px 24px;

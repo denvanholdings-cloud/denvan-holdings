@@ -11,11 +11,14 @@ export default function Header() {
     <header style={styles.header}>
       <div className="container" style={styles.inner}>
         <Link href="/" style={styles.logo}>
-          <Image src="/denvan-holdings/images/logo.png" alt="Denvan Holdings" width={56} height={56} style={{ borderRadius: 10 }} />
-          <div>
-            <div style={styles.logoText}>DENVAN HOLDINGS</div>
-            <div style={styles.logoSub}>LLC</div>
-          </div>
+          <Image
+            src="/denvan-holdings/images/logo.png"
+            alt="Denvan Holdings"
+            width={180}
+            height={150}
+            style={{ objectFit: "contain", height: 70, width: "auto" }}
+            priority
+          />
         </Link>
 
         <nav style={styles.nav}>
@@ -84,26 +87,12 @@ const styles: Record<string, React.CSSProperties> = {
     display: "flex",
     alignItems: "center",
     justifyContent: "space-between",
-    height: 88,
+    height: 90,
   },
   logo: {
     display: "flex",
     alignItems: "center",
-    gap: 14,
     textDecoration: "none",
-  },
-  logoText: {
-    fontWeight: 700,
-    fontSize: 20,
-    color: "#1B5E37",
-    letterSpacing: "0.05em",
-    lineHeight: 1.2,
-  },
-  logoSub: {
-    fontSize: 11,
-    color: "#64748B",
-    letterSpacing: "0.15em",
-    fontWeight: 500,
   },
   nav: {
     display: "flex",
