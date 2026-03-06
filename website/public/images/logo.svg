@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none">
+  <!-- Background -->
+  <rect width="200" height="200" rx="24" fill="#1B2A4A"/>
+
+  <!-- Geometric D monogram with upward architectural element -->
+  <path d="M60 40h50c30 0 55 20 55 60s-25 60-55 60H60V40z" fill="none" stroke="#C5A55A" stroke-width="8"/>
+
+  <!-- Inner architectural lines -->
+  <line x1="80" y1="60" x2="80" y2="140" stroke="#C5A55A" stroke-width="4"/>
+  <line x1="80" y1="100" x2="140" y2="100" stroke="#C5A55A" stroke-width="3"/>
+
+  <!-- Upward arrow element -->
+  <path d="M100 25L115 45H85L100 25z" fill="#C5A55A"/>
+</svg>
