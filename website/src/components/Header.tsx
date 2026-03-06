@@ -11,7 +11,7 @@ export default function Header() {
     <header style={styles.header}>
       <div className="container" style={styles.inner}>
         <Link href="/" style={styles.logo}>
-          <Image src="/denvan-holdings/images/logo.png" alt="Denvan Holdings" width={48} height={48} style={{ borderRadius: 4 }} />
+          <Image src="/denvan-holdings/images/logo.png" alt="Denvan Holdings" width={48} height={48} style={{ borderRadius: 8 }} />
           <div>
             <div style={styles.logoText}>DENVAN HOLDINGS</div>
             <div style={styles.logoSub}>LLC</div>

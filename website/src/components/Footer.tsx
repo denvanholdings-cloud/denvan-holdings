@@ -10,7 +10,7 @@ export default function Footer() {
         <div style={styles.top}>
           <div style={styles.brand}>
             <div style={styles.logoRow}>
-              <Image src="/denvan-holdings/images/logo.png" alt="Denvan Holdings" width={40} height={40} style={{ borderRadius: 4 }} />
+              <Image src="/denvan-holdings/images/logo.png" alt="Denvan Holdings" width={40} height={40} style={{ borderRadius: 8, boxShadow: "0 0 0 2px #1B4A2E" }} />
               <div>
                 <div style={styles.logoText}>DENVAN HOLDINGS</div>
                 <div style={styles.logoSub}>LLC</div>
