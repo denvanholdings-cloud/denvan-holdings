@@ -1,4 +1,5 @@
 import Link from "next/link";
+import PostImage from "@/components/PostImage";
 import { posts } from "../posts";
 
 export function generateStaticParams() {
@@ -143,15 +144,7 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
             {otherPosts.map((p) => (
               <Link key={p.slug} href={`/blog/${p.slug}`} style={{ textDecoration: "none" }}>
                 <article className="card" style={{ padding: 0, overflow: "hidden" }}>
-                  <div style={{
-                    height: 160,
-                    background: "linear-gradient(135deg, #F1F5F9, #E2E8F0)",
-                    display: "flex",
-                    alignItems: "center",
-                    justifyContent: "center",
-                  }}>
-                    <span style={{ fontSize: 32, fontWeight: 700, color: "#C5A55A", opacity: 0.3 }}>DH</span>
-                  </div>
+                  <PostImage category={p.category} height={160} size="small" />
                   <div style={{ padding: 24 }}>
                     <div style={{ display: "inline-block", padding: "3px 10px", background: "#F1F5F9", color: "#1B2A4A", borderRadius: 100, fontSize: 11, fontWeight: 600, marginBottom: 10 }}>
                       {p.category}

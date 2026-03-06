@@ -38,6 +38,7 @@ export default function Services() {
             {[
               {
                 title: "Corporate Strategy",
+                icon: <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#C5A55A" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>,
                 items: [
                   "Long-term strategic planning and vision setting",
                   "Market research and competitive analysis",
@@ -47,6 +48,7 @@ export default function Services() {
               },
               {
                 title: "Financial Management",
+                icon: <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#C5A55A" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>,
                 items: [
                   "Centralized bookkeeping and accounting",
                   "Tax planning and preparation",
@@ -56,6 +58,7 @@ export default function Services() {
               },
               {
                 title: "Legal & Compliance",
+                icon: <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#C5A55A" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>,
                 items: [
                   "Business entity formation and maintenance",
                   "Contract review and management",
@@ -65,6 +68,7 @@ export default function Services() {
               },
               {
                 title: "Technology & IT",
+                icon: <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#C5A55A" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>,
                 items: [
                   "IT infrastructure setup and management",
                   "Software and tool procurement",
@@ -74,6 +78,7 @@ export default function Services() {
               },
               {
                 title: "Marketing & Branding",
+                icon: <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#C5A55A" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>,
                 items: [
                   "Brand strategy and identity development",
                   "Website design and management",
@@ -83,6 +88,7 @@ export default function Services() {
               },
               {
                 title: "Human Resources",
+                icon: <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#C5A55A" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>,
                 items: [
                   "Recruitment and talent acquisition",
                   "Employee onboarding and training",
@@ -92,6 +98,7 @@ export default function Services() {
               },
             ].map((service) => (
               <div key={service.title} className="card">
+                <div style={{ width: 44, height: 44, background: "rgba(197, 165, 90, 0.1)", display: "flex", alignItems: "center", justifyContent: "center", borderRadius: 10, marginBottom: 16 }}>{service.icon}</div>
                 <h3 style={{ fontSize: 20, fontWeight: 600, color: "#1B2A4A", marginBottom: 16 }}>
                   {service.title}
                 </h3>

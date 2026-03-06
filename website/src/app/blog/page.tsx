@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import AnimateOnScroll from "@/components/AnimateOnScroll";
+import PostImage from "@/components/PostImage";
 import { posts, categories } from "./posts";
 
 export default function Blog() {
@@ -55,9 +56,7 @@ export default function Blog() {
           <AnimateOnScroll animation="fade-up">
             <Link href={`/blog/${featured.slug}`} style={{ textDecoration: "none", color: "inherit" }}>
               <div className="featured-post">
-                <div style={styles.featuredImage}>
-                  <span style={{ fontSize: 72, fontWeight: 700, color: "#C5A55A", opacity: 0.3 }}>DH</span>
-                </div>
+                <PostImage category={featured.category} height={320} size="large" />
                 <div>
                   <div style={styles.badge}>{featured.category}</div>
                   <h2 style={{ fontSize: 28, fontWeight: 700, color: "#1B2A4A", marginBottom: 12, lineHeight: 1.3 }}>
@@ -89,15 +88,7 @@ export default function Blog() {
             {rest.map((post) => (
               <Link key={post.slug} href={`/blog/${post.slug}`} style={{ textDecoration: "none" }}>
                 <article className="card" style={{ padding: 0, overflow: "hidden", height: "100%" }}>
-                  <div style={{
-                    height: 180,
-                    background: "linear-gradient(135deg, #F1F5F9, #E2E8F0)",
-                    display: "flex",
-                    alignItems: "center",
-                    justifyContent: "center",
-                  }}>
-                    <span style={{ fontSize: 36, fontWeight: 700, color: "#C5A55A", opacity: 0.3 }}>DH</span>
-                  </div>
+                  <PostImage category={post.category} height={180} size="small" />
                   <div style={{ padding: 24 }}>
                     <div style={{ ...styles.badge, marginBottom: 12 }}>{post.category}</div>
                     <h3 style={{ fontSize: 17, fontWeight: 600, color: "#1B2A4A", marginBottom: 8, lineHeight: 1.4 }}>
@@ -132,12 +123,45 @@ export default function Blog() {
           </AnimateOnScroll>
           <div className="grid-4">
             {[
-              { title: "Holding Company Strategy", desc: "Structuring, governance, and management frameworks for parent companies." },
-              { title: "Business Growth", desc: "Scaling strategies, market expansion, and revenue optimization approaches." },
-              { title: "Operations & Efficiency", desc: "Shared services, SOPs, and operational excellence across subsidiaries." },
-              { title: "Investment & Finance", desc: "Capital allocation, revenue models, and financial planning for diversified portfolios." },
+              {
+                title: "Holding Company Strategy",
+                desc: "Structuring, governance, and management frameworks for parent companies.",
+                icon: (
+                  <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#C5A55A" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z" /><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z" />
+                  </svg>
+                ),
+              },
+              {
+                title: "Business Growth",
+                desc: "Scaling strategies, market expansion, and revenue optimization approaches.",
+                icon: (
+                  <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#C5A55A" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+                    <polyline points="23 6 13.5 15.5 8.5 10.5 1 18" /><polyline points="17 6 23 6 23 12" />
+                  </svg>
+                ),
+              },
+              {
+                title: "Operations & Efficiency",
+                desc: "Shared services, SOPs, and operational excellence across subsidiaries.",
+                icon: (
+                  <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#C5A55A" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+                    <circle cx="12" cy="12" r="3" /><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z" />
+                  </svg>
+                ),
+              },
+              {
+                title: "Investment & Finance",
+                desc: "Capital allocation, revenue models, and financial planning for diversified portfolios.",
+                icon: (
+                  <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#C5A55A" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+                    <line x1="12" y1="1" x2="12" y2="23" /><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
+                  </svg>
+                ),
+              },
             ].map((topic) => (
               <div key={topic.title} style={styles.topicCard}>
+                <div style={{ marginBottom: 12 }}>{topic.icon}</div>
                 <h3 style={{ fontSize: 16, fontWeight: 600, color: "#1B2A4A", marginBottom: 8 }}>{topic.title}</h3>
                 <p style={{ fontSize: 14, color: "#64748B", lineHeight: 1.6 }}>{topic.desc}</p>
               </div>
@@ -191,14 +215,6 @@ const styles: Record<string, React.CSSProperties> = {
   breadcrumb: { fontSize: 14, color: "#64748B", marginBottom: 16 },
   heroTitle: { fontSize: "2.75rem", fontWeight: 700, marginBottom: 16 },
   heroText: { fontSize: 18, color: "#94A3B8", maxWidth: 640, lineHeight: 1.7 },
-  featuredImage: {
-    minHeight: 320,
-    background: "linear-gradient(135deg, #1B2A4A, #2A3F6A)",
-    borderRadius: 16,
-    display: "flex",
-    alignItems: "center",
-    justifyContent: "center",
-  },
   badge: {
     display: "inline-block",
     padding: "4px 12px",
