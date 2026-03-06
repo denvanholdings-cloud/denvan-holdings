@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -9,7 +10,7 @@ export default function Footer() {
         <div style={styles.top}>
           <div style={styles.brand}>
             <div style={styles.logoRow}>
-              <div style={styles.logoMark}>D</div>
+              <Image src="/denvan-holdings/images/logo.png" alt="Denvan Holdings" width={40} height={40} style={{ borderRadius: 4 }} />
               <div>
                 <div style={styles.logoText}>DENVAN HOLDINGS</div>
                 <div style={styles.logoSub}>LLC</div>
@@ -74,7 +75,7 @@ export default function Footer() {
 
 const styles: Record<string, React.CSSProperties> = {
   footer: {
-    background: "#0F172A",
+    background: "#0D2818",
     color: "#94A3B8",
     padding: "64px 0 0",
   },
@@ -83,7 +84,7 @@ const styles: Record<string, React.CSSProperties> = {
     gridTemplateColumns: "1fr 2fr",
     gap: 64,
     paddingBottom: 48,
-    borderBottom: "1px solid #1E293B",
+    borderBottom: "1px solid #1B4A2E",
   },
   brand: {},
   logoRow: {
@@ -95,8 +96,8 @@ const styles: Record<string, React.CSSProperties> = {
   logoMark: {
     width: 40,
     height: 40,
-    background: "#C5A55A",
-    color: "#0F172A",
+    background: "#B8942A",
+    color: "#0D2818",
     display: "flex",
     alignItems: "center",
     justifyContent: "center",
@@ -119,7 +120,7 @@ const styles: Record<string, React.CSSProperties> = {
     fontWeight: 500,
   },
   tagline: {
-    color: "#C5A55A",
+    color: "#B8942A",
     fontSize: 18,
     marginBottom: 12,
     fontStyle: "italic",

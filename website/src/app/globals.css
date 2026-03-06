@@ -1,15 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;700&display=swap');
 
 :root {
-  --navy: #1B2A4A;
-  --gold: #C5A55A;
+  --navy: #1B5E37;
+  --gold: #B8942A;
   --white: #FFFFFF;
   --slate: #64748B;
   --light-gray: #F1F5F9;
-  --charcoal: #0F172A;
-  --gold-light: #D4BA7A;
-  --gold-dark: #A68B3E;
-  --navy-light: #2A3F6A;
+  --charcoal: #0D2818;
+  --gold-light: #D4AD3A;
+  --gold-dark: #96780E;
+  --navy-light: #267A48;
 }
 
 * {
@@ -74,7 +74,7 @@ img {
 .btn-primary:hover {
   background: var(--gold-dark);
   transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(197, 165, 90, 0.4);
+  box-shadow: 0 4px 12px rgba(184, 148, 42, 0.4);
 }
 
 .btn-secondary {
@@ -221,7 +221,7 @@ img {
 .form-select:focus {
   outline: none;
   border-color: var(--gold);
-  box-shadow: 0 0 0 3px rgba(197, 165, 90, 0.15);
+  box-shadow: 0 0 0 3px rgba(184, 148, 42, 0.15);
 }
 
 .form-textarea {

@@ -31,7 +31,7 @@ export default function Contact() {
           <div style={styles.grid}>
             {/* Form */}
             <div>
-              <h2 style={{ fontSize: 24, fontWeight: 600, color: "#1B2A4A", marginBottom: 8 }}>
+              <h2 style={{ fontSize: 24, fontWeight: 600, color: "#1B5E37", marginBottom: 8 }}>
                 Send Us a Message
               </h2>
               <p style={{ color: "#64748B", marginBottom: 32, fontSize: 15 }}>
@@ -98,7 +98,7 @@ export default function Contact() {
             {/* Contact Info Sidebar */}
             <div>
               <div style={styles.infoCard}>
-                <h3 style={{ fontSize: 18, fontWeight: 600, color: "#1B2A4A", marginBottom: 24 }}>
+                <h3 style={{ fontSize: 18, fontWeight: 600, color: "#1B5E37", marginBottom: 24 }}>
                   Contact Information
                 </h3>
 
@@ -113,7 +113,7 @@ export default function Contact() {
                     <div style={{ fontSize: 12, fontWeight: 600, color: "#64748B", textTransform: "uppercase", letterSpacing: "0.05em", marginBottom: 4 }}>
                       {item.label}
                     </div>
-                    <div style={{ color: "#1B2A4A", fontWeight: 500 }}>{item.value}</div>
+                    <div style={{ color: "#1B5E37", fontWeight: 500 }}>{item.value}</div>
                   </div>
                 ))}
 
@@ -121,7 +121,7 @@ export default function Contact() {
                   <div style={{ fontSize: 12, fontWeight: 600, color: "#64748B", textTransform: "uppercase", letterSpacing: "0.05em", marginBottom: 4 }}>
                     Office Address
                   </div>
-                  <div style={{ color: "#1B2A4A", fontWeight: 500 }}>
+                  <div style={{ color: "#1B5E37", fontWeight: 500 }}>
                     5900 Balcones Drive, STE 100<br />
                     Austin, TX 78731
                   </div>
@@ -129,7 +129,7 @@ export default function Contact() {
               </div>
 
               <div style={styles.infoCard}>
-                <h3 style={{ fontSize: 18, fontWeight: 600, color: "#1B2A4A", marginBottom: 12 }}>
+                <h3 style={{ fontSize: 18, fontWeight: 600, color: "#1B5E37", marginBottom: 12 }}>
                   Business Hours
                 </h3>
                 <p style={{ color: "#64748B", fontSize: 14, lineHeight: 1.7 }}>
@@ -138,7 +138,7 @@ export default function Contact() {
                 </p>
               </div>
 
-              <div style={{ ...styles.infoCard, background: "#1B2A4A", color: "#FFFFFF" }}>
+              <div style={{ ...styles.infoCard, background: "#1B5E37", color: "#FFFFFF" }}>
                 <h3 style={{ fontSize: 18, fontWeight: 600, marginBottom: 8 }}>
                   Investor Inquiries
                 </h3>
@@ -159,7 +159,7 @@ export default function Contact() {
 
 const styles: Record<string, React.CSSProperties> = {
   hero: {
-    background: "linear-gradient(135deg, #0F172A 0%, #1B2A4A 100%)",
+    background: "linear-gradient(135deg, #0D2818 0%, #1B5E37 100%)",
     padding: "80px 0",
     color: "#FFFFFF",
   },

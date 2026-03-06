@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -10,7 +11,7 @@ export default function Header() {
     <header style={styles.header}>
       <div className="container" style={styles.inner}>
         <Link href="/" style={styles.logo}>
-          <div style={styles.logoMark}>D</div>
+          <Image src="/denvan-holdings/images/logo.png" alt="Denvan Holdings" width={48} height={48} style={{ borderRadius: 4 }} />
           <div>
             <div style={styles.logoText}>DENVAN HOLDINGS</div>
             <div style={styles.logoSub}>LLC</div>
@@ -94,8 +95,8 @@ const styles: Record<string, React.CSSProperties> = {
   logoMark: {
     width: 44,
     height: 44,
-    background: "#1B2A4A",
-    color: "#C5A55A",
+    background: "#1B5E37",
+    color: "#B8942A",
     display: "flex",
     alignItems: "center",
     justifyContent: "center",
@@ -107,7 +108,7 @@ const styles: Record<string, React.CSSProperties> = {
   logoText: {
     fontWeight: 700,
     fontSize: 18,
-    color: "#1B2A4A",
+    color: "#1B5E37",
     letterSpacing: "0.05em",
     lineHeight: 1.2,
   },
@@ -125,7 +126,7 @@ const styles: Record<string, React.CSSProperties> = {
   navLink: {
     fontSize: 15,
     fontWeight: 500,
-    color: "#1B2A4A",
+    color: "#1B5E37",
     transition: "color 0.2s",
   },
   mobileToggle: {
@@ -141,7 +142,7 @@ const styles: Record<string, React.CSSProperties> = {
     display: "block",
     width: 24,
     height: 2,
-    background: "#1B2A4A",
+    background: "#1B5E37",
     transition: "all 0.3s",
   },
   mobileMenu: {
@@ -155,7 +156,7 @@ const styles: Record<string, React.CSSProperties> = {
     padding: "12px 0",
     fontSize: 16,
     fontWeight: 500,
-    color: "#1B2A4A",
+    color: "#1B5E37",
     borderBottom: "1px solid #F1F5F9",
   },
 };

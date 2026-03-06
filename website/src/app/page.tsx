@@ -9,7 +9,7 @@ export default function Home() {
           <p style={styles.heroBadge}>Multi-Industry Holding Company</p>
           <h1 style={styles.heroTitle}>
             Building Businesses.<br />
-            <span className="font-playfair" style={{ color: "#C5A55A" }}>Creating Legacy.</span>
+            <span className="font-playfair" style={{ color: "#B8942A" }}>Creating Legacy.</span>
           </h1>
           <p style={styles.heroText}>
             Denvan Holdings LLC owns and manages a diversified portfolio of businesses
@@ -99,7 +99,7 @@ export default function Home() {
             ].map((item) => (
               <div key={item.title} className="card">
                 <div style={styles.cardIcon}>{item.icon}</div>
-                <h3 style={{ fontSize: 18, fontWeight: 600, marginBottom: 8, color: "#1B2A4A" }}>{item.title}</h3>
+                <h3 style={{ fontSize: 18, fontWeight: 600, marginBottom: 8, color: "#1B5E37" }}>{item.title}</h3>
                 <p style={{ color: "#64748B", fontSize: 14, lineHeight: 1.6 }}>{item.desc}</p>
               </div>
             ))}
@@ -130,7 +130,7 @@ export default function Home() {
                 { name: "Scalability", desc: "Designed to grow efficiently" },
               ].map((value) => (
                 <div key={value.name} style={styles.valueItem}>
-                  <h4 style={{ fontWeight: 600, color: "#1B2A4A", marginBottom: 4 }}>{value.name}</h4>
+                  <h4 style={{ fontWeight: 600, color: "#1B5E37", marginBottom: 4 }}>{value.name}</h4>
                   <p style={{ fontSize: 14, color: "#64748B" }}>{value.desc}</p>
                 </div>
               ))}
@@ -162,7 +162,7 @@ export default function Home() {
 
 const styles: Record<string, React.CSSProperties> = {
   hero: {
-    background: "linear-gradient(135deg, #0F172A 0%, #1B2A4A 50%, #2A3F6A 100%)",
+    background: "linear-gradient(135deg, #0D2818 0%, #1B5E37 50%, #267A48 100%)",
     color: "#FFFFFF",
     padding: "120px 0 100px",
     position: "relative",
@@ -177,7 +177,7 @@ const styles: Record<string, React.CSSProperties> = {
     display: "inline-block",
     padding: "6px 16px",
     background: "rgba(197, 165, 90, 0.15)",
-    color: "#C5A55A",
+    color: "#B8942A",
     borderRadius: 100,
     fontSize: 14,
     fontWeight: 500,
@@ -206,7 +206,7 @@ const styles: Record<string, React.CSSProperties> = {
     width: 48,
     height: 48,
     background: "#F1F5F9",
-    color: "#C5A55A",
+    color: "#B8942A",
     display: "flex",
     alignItems: "center",
     justifyContent: "center",
@@ -219,7 +219,7 @@ const styles: Record<string, React.CSSProperties> = {
     fontSize: 18,
     fontWeight: 600,
     marginBottom: 8,
-    color: "#1B2A4A",
+    color: "#1B5E37",
   },
   cardDesc: {
     fontSize: 14,
@@ -249,7 +249,7 @@ const styles: Record<string, React.CSSProperties> = {
     borderRadius: 12,
   },
   cta: {
-    background: "linear-gradient(135deg, #0F172A 0%, #1B2A4A 100%)",
+    background: "linear-gradient(135deg, #0D2818 0%, #1B5E37 100%)",
     padding: "96px 0",
   },
 };
