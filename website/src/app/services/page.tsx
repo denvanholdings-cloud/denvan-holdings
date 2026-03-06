@@ -4,7 +4,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Services & Portfolio | Denvan Holdings LLC",
   description:
-    "Discover how Denvan Holdings manages and supports subsidiaries across professional services, education, technology consulting, and personal services.",
+    "Discover how Denvan Holdings manages and supports subsidiaries across several diverse business sectors.",
 };
 
 export default function Services() {
@@ -109,77 +109,44 @@ export default function Services() {
         </div>
       </section>
 
-      {/* Portfolio Sectors */}
+      {/* Portfolio Approach */}
       <section className="section section-light">
         <div className="container">
           <div className="text-center" style={{ marginBottom: 48 }}>
-            <h2 className="section-title">Portfolio Sectors</h2>
+            <h2 className="section-title">Our Portfolio Approach</h2>
             <p className="section-subtitle" style={{ margin: "16px auto 48px" }}>
-              Denvan Holdings operates across several strategic industry sectors, each
-              chosen for its growth potential and alignment with our expertise.
+              Denvan Holdings operates across several different industry sectors. We
+              strategically build and manage businesses wherever we see opportunity,
+              growth potential, and alignment with our expertise.
             </p>
           </div>
-
-          {[
-            {
-              name: "Professional Services",
-              color: "#0D9488",
-              desc: "Our professional services subsidiaries deliver consulting, staffing, and specialized business support to organizations of all sizes. From strategic advisory to operational support, we help businesses perform at their best.",
-              offerings: ["Business Consulting", "Staffing & Recruitment", "Project Management", "Administrative Support"],
-            },
-            {
-              name: "Education & Training",
-              color: "#7C3AED",
-              desc: "Our education subsidiaries develop and deliver learning programs that help individuals and organizations grow. From tutoring services to professional development, we invest in human potential.",
-              offerings: ["Tutoring & Academic Support", "Professional Development", "Workforce Training", "Online Learning Programs"],
-            },
-            {
-              name: "Technology Consulting",
-              color: "#2563EB",
-              desc: "Our technology consulting subsidiaries help businesses harness the power of technology. From IT strategy to digital transformation, we bridge the gap between business goals and technical solutions.",
-              offerings: ["IT Strategy & Advisory", "Digital Transformation", "Software Selection & Implementation", "Cybersecurity Consulting"],
-            },
-            {
-              name: "Personal Services",
-              color: "#F97316",
-              desc: "Our personal services subsidiaries deliver consumer-focused services that improve quality of life. From wellness to lifestyle services, we build businesses that serve individuals and families.",
-              offerings: ["Wellness & Health Services", "Lifestyle & Concierge", "Personal Development", "Community Services"],
-            },
-          ].map((sector, i) => (
-            <div key={sector.name} style={{
-              ...styles.sectorRow,
-              flexDirection: i % 2 === 0 ? "row" : "row-reverse",
-            }}>
-              <div style={{ flex: 1 }}>
-                <div style={{ display: "flex", alignItems: "center", gap: 12, marginBottom: 16 }}>
-                  <div style={{ width: 16, height: 16, borderRadius: "50%", background: sector.color }} />
-                  <h3 style={{ fontSize: 24, fontWeight: 600, color: "#1B2A4A" }}>{sector.name}</h3>
-                </div>
-                <p style={{ color: "#64748B", lineHeight: 1.7, marginBottom: 20 }}>{sector.desc}</p>
-                <div style={{ display: "flex", flexWrap: "wrap", gap: 8 }}>
-                  {sector.offerings.map((o) => (
-                    <span key={o} style={{ ...styles.tag, borderColor: sector.color, color: sector.color }}>
-                      {o}
-                    </span>
-                  ))}
-                </div>
+          <div className="grid-2">
+            {[
+              {
+                title: "Multi-Industry Reach",
+                desc: "We don't limit ourselves to a single market. Our subsidiaries span diverse sectors, allowing us to leverage cross-industry insights and build a resilient, diversified portfolio.",
+              },
+              {
+                title: "DBA-Based Flexibility",
+                desc: "Each subsidiary operates as a DBA under Denvan Holdings, giving us the agility to launch new ventures quickly and pivot into emerging markets as opportunities arise.",
+              },
+              {
+                title: "Strategic Selection",
+                desc: "Every new business is carefully evaluated for market demand, revenue potential, and strategic fit before joining our portfolio. We grow with intention, not impulse.",
+              },
+              {
+                title: "Continuous Expansion",
+                desc: "Our portfolio is always evolving. As we identify new sectors and opportunities, we build subsidiary businesses backed by the full resources of Denvan Holdings.",
+              },
+            ].map((item) => (
+              <div key={item.title} className="card">
+                <h3 style={{ fontSize: 20, fontWeight: 600, color: "#1B2A4A", marginBottom: 12 }}>
+                  {item.title}
+                </h3>
+                <p style={{ color: "#64748B", lineHeight: 1.7 }}>{item.desc}</p>
               </div>
-              <div style={{
-                flex: "0 0 280px",
-                height: 200,
-                background: `linear-gradient(135deg, ${sector.color}22, ${sector.color}44)`,
-                borderRadius: 16,
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
-                border: `2px solid ${sector.color}33`,
-              }}>
-                <span style={{ fontSize: 48, fontWeight: 700, color: sector.color, opacity: 0.5 }}>
-                  {sector.name.charAt(0)}
-                </span>
-              </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
       </section>
 

@@ -13,9 +13,8 @@ export default function Home() {
           </h1>
           <p style={styles.heroText}>
             Denvan Holdings LLC owns and manages a diversified portfolio of businesses
-            across professional services, education, technology consulting, and personal
-            services. We provide the strategic leadership, infrastructure, and resources
-            our subsidiaries need to thrive.
+            across several diverse business sectors. We provide the strategic leadership,
+            infrastructure, and resources our subsidiaries need to thrive.
           </p>
           <div style={styles.heroCTA}>
             <Link href="/contact" className="btn btn-primary">
@@ -53,7 +52,7 @@ export default function Home() {
               {
                 icon: "03",
                 title: "Multi-Industry Expertise",
-                desc: "Deep knowledge across professional services, education, technology, and personal services allows us to spot opportunities others miss.",
+                desc: "Deep knowledge across several industries allows us to spot opportunities others miss and apply proven strategies to new markets.",
               },
               {
                 icon: "04",
@@ -85,23 +84,23 @@ export default function Home() {
       <section className="section section-light">
         <div className="container">
           <div className="text-center" style={{ marginBottom: 48 }}>
-            <h2 className="section-title">Our Portfolio Sectors</h2>
+            <h2 className="section-title">Our Portfolio</h2>
             <p className="section-subtitle" style={{ margin: "16px auto 48px" }}>
-              Denvan Holdings operates across several key industry sectors, with plans
-              for continued strategic expansion.
+              Denvan Holdings operates across several different industry sectors.
+              Our diversified approach allows us to identify opportunities, manage risk,
+              and build lasting businesses wherever we see potential.
             </p>
           </div>
-          <div className="grid-4">
+          <div className="grid-3">
             {[
-              { name: "Professional Services", color: "#0D9488", desc: "Consulting, staffing, and professional support services" },
-              { name: "Education & Training", color: "#7C3AED", desc: "Learning programs, tutoring, and workforce development" },
-              { name: "Technology Consulting", color: "#2563EB", desc: "IT strategy, digital transformation, and tech advisory" },
-              { name: "Personal Services", color: "#F97316", desc: "Consumer-focused services and lifestyle businesses" },
-            ].map((sector) => (
-              <div key={sector.name} className="card" style={{ borderTop: `4px solid ${sector.color}` }}>
-                <div style={{ ...styles.sectorDot, background: sector.color }} />
-                <h3 style={{ fontSize: 18, fontWeight: 600, marginBottom: 8 }}>{sector.name}</h3>
-                <p style={{ color: "#64748B", fontSize: 14 }}>{sector.desc}</p>
+              { title: "Diverse Industries", icon: "01", desc: "We build and manage businesses across a wide range of sectors -- adapting our expertise to each unique market." },
+              { title: "Growing Portfolio", icon: "02", desc: "Our portfolio continues to expand as we launch new subsidiaries and explore strategic acquisitions in emerging sectors." },
+              { title: "Strategic Expansion", icon: "03", desc: "Every new venture is carefully evaluated for market fit, growth potential, and alignment with our corporate vision." },
+            ].map((item) => (
+              <div key={item.title} className="card">
+                <div style={styles.cardIcon}>{item.icon}</div>
+                <h3 style={{ fontSize: 18, fontWeight: 600, marginBottom: 8, color: "#1B2A4A" }}>{item.title}</h3>
+                <p style={{ color: "#64748B", fontSize: 14, lineHeight: 1.6 }}>{item.desc}</p>
               </div>
             ))}
           </div>

@@ -17,8 +17,7 @@ export default function About() {
           <h1 style={styles.heroTitle}>About Denvan Holdings</h1>
           <p style={styles.heroText}>
             We are a strategic holding company that builds, acquires, and manages
-            businesses across professional services, education, technology consulting,
-            and personal services.
+            businesses across several diverse industry sectors.
           </p>
         </div>
       </section>

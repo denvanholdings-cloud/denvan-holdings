@@ -20,8 +20,8 @@ export default function Footer() {
             </p>
             <p style={styles.description}>
               A multi-industry holding company providing strategic management,
-              investment, and operational support across professional services,
-              education, technology consulting, and personal services.
+              investment, and operational support across several diverse
+              business sectors.
             </p>
           </div>
 

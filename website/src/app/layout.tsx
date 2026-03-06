@@ -6,7 +6,7 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "Denvan Holdings LLC | Building Businesses. Creating Legacy.",
   description:
-    "Denvan Holdings is a multi-industry holding company providing strategic management, investment, and operational support across professional services, education, technology consulting, and personal services.",
+    "Denvan Holdings is a multi-industry holding company providing strategic management, investment, and operational support across several diverse business sectors.",
   keywords: [
     "holding company",
     "business management",
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Denvan Holdings LLC | Building Businesses. Creating Legacy.",
     description:
-      "A multi-industry holding company providing strategic management and operational support across professional services, education, technology, and personal services.",
+      "A multi-industry holding company providing strategic management and operational support across several diverse business sectors.",
     type: "website",
     locale: "en_US",
     siteName: "Denvan Holdings LLC",
