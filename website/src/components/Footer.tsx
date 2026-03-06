@@ -48,10 +48,10 @@ export default function Footer() {
               <h4 style={styles.linkTitle}>Contact</h4>
               <ul style={styles.linkList}>
                 <li style={styles.contactItem}>info@denvanholdings.com</li>
-                <li style={styles.contactItem}>(XXX) XXX-XXXX</li>
+                <li style={styles.contactItem}>(202) 415-9373</li>
                 <li style={styles.contactItem}>
-                  [Office Address]<br />
-                  [City, State ZIP]
+                  5900 Balcones Drive, STE 100<br />
+                  Austin, TX 78731
                 </li>
               </ul>
             </div>

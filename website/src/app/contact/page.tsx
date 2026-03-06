@@ -107,7 +107,7 @@ export default function Contact() {
                   { label: "Partnerships", value: "partnerships@denvanholdings.com" },
                   { label: "Investor Relations", value: "investors@denvanholdings.com" },
                   { label: "Careers", value: "careers@denvanholdings.com" },
-                  { label: "Phone", value: "(XXX) XXX-XXXX" },
+                  { label: "Phone", value: "(202) 415-9373" },
                 ].map((item) => (
                   <div key={item.label} style={styles.infoItem}>
                     <div style={{ fontSize: 12, fontWeight: 600, color: "#64748B", textTransform: "uppercase", letterSpacing: "0.05em", marginBottom: 4 }}>
@@ -122,8 +122,8 @@ export default function Contact() {
                     Office Address
                   </div>
                   <div style={{ color: "#1B2A4A", fontWeight: 500 }}>
-                    [Street Address]<br />
-                    [City, State ZIP Code]
+                    5900 Balcones Drive, STE 100<br />
+                    Austin, TX 78731
                   </div>
                 </div>
               </div>
