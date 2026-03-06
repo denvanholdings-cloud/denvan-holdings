@@ -207,6 +207,7 @@ const styles: Record<string, React.CSSProperties> = {
     color: "#64748B",
     lineHeight: 1.8,
     paddingLeft: 20,
+    listStyle: "disc",
     marginBottom: 24,
   },
   highlightCard: {
