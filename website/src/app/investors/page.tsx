@@ -77,7 +77,7 @@ export default function Investors() {
                 period: "Year 1",
                 items: [
                   "Establish parent company infrastructure",
-                  "Launch initial subsidiaries across 2-3 sectors",
+                  "Launch initial subsidiaries across key sectors",
                   "Build shared services capabilities",
                   "Develop operational playbooks",
                 ],
@@ -88,7 +88,7 @@ export default function Investors() {
                 period: "Years 2-3",
                 items: [
                   "Scale existing subsidiaries",
-                  "Launch 2-4 additional businesses",
+                  "Launch additional businesses in new sectors",
                   "Explore strategic acquisitions",
                   "Build cross-subsidiary synergies",
                 ],

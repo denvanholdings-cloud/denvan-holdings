@@ -40,26 +40,26 @@ const posts = [
     readTime: "5 min read",
   },
   {
-    slug: "professional-services-trends-2026",
-    title: "Professional Services Trends to Watch in 2026",
+    slug: "shared-services-save-time-money",
+    title: "How Shared Services Save Subsidiaries Time and Money",
     excerpt:
-      "The professional services industry is evolving rapidly. Here are the key trends shaping consulting, staffing, and business support services this year.",
+      "Centralized HR, legal, IT, and marketing services reduce overhead for every business in the portfolio. Here's how the shared services model works and why it matters.",
     category: "Industry Insights",
     date: "February 10, 2026",
     readTime: "7 min read",
   },
   {
-    slug: "technology-consulting-digital-strategy",
-    title: "Technology Consulting: Why Every Business Needs a Digital Strategy",
+    slug: "scalable-business-structure",
+    title: "Building a Scalable Business Structure from Day One",
     excerpt:
-      "Digital transformation isn't optional anymore. Here's why businesses of every size need a clear technology strategy -- and how to get started.",
-    category: "Technology",
+      "The decisions you make early on about structure, systems, and processes determine how efficiently your business can grow. Here's how to get it right.",
+    category: "Business Strategy",
     date: "February 3, 2026",
     readTime: "6 min read",
   },
 ];
 
-const categories = ["All", "Business Strategy", "Company News", "Management", "Industry Insights", "Technology"];
+const categories = ["All", "Business Strategy", "Company News", "Management", "Industry Insights"];
 
 export default function Blog() {
   const featured = posts[0];

@@ -124,43 +124,27 @@ export default function About() {
           <div className="text-center" style={{ marginBottom: 48 }}>
             <h2 className="section-title">Leadership</h2>
             <p className="section-subtitle" style={{ margin: "16px auto 48px" }}>
-              Our leadership team brings diverse expertise across business management,
-              finance, technology, and operations.
+              Denvan Holdings is led by a dedicated leadership team with expertise
+              across business management, finance, technology, and operations.
             </p>
           </div>
-          <div className="grid-3">
-            {[
-              {
-                name: "[Founder Name]",
-                role: "Founder & CEO",
-                bio: "Visionary leader with experience across multiple industries. Responsible for corporate strategy, subsidiary oversight, and long-term growth planning for Denvan Holdings.",
-              },
-              {
-                name: "[Name]",
-                role: "Chief Operations Officer",
-                bio: "Oversees day-to-day operations, subsidiary management, and shared services. Ensures operational excellence and consistency across the portfolio.",
-              },
-              {
-                name: "[Name]",
-                role: "Chief Financial Officer",
-                bio: "Manages financial strategy, accounting, tax planning, and capital allocation. Ensures fiscal responsibility and transparent financial reporting.",
-              },
-            ].map((person) => (
-              <div key={person.role} className="card text-center">
-                <div style={styles.avatar}>
-                  {person.name.charAt(1)}
-                </div>
-                <h3 style={{ fontSize: 18, fontWeight: 600, marginBottom: 4 }}>
-                  {person.name}
-                </h3>
-                <p style={{ color: "#C5A55A", fontWeight: 500, fontSize: 14, marginBottom: 12 }}>
-                  {person.role}
-                </p>
-                <p style={{ fontSize: 14, color: "#64748B", lineHeight: 1.6 }}>
-                  {person.bio}
-                </p>
-              </div>
-            ))}
+          <div style={{ maxWidth: 600, margin: "0 auto" }}>
+            <div className="card text-center">
+              <div style={styles.avatar}>D</div>
+              <h3 style={{ fontSize: 20, fontWeight: 600, marginBottom: 4 }}>
+                Denvan Holdings Leadership
+              </h3>
+              <p style={{ color: "#C5A55A", fontWeight: 500, fontSize: 14, marginBottom: 16 }}>
+                Executive Team
+              </p>
+              <p style={{ fontSize: 15, color: "#64748B", lineHeight: 1.7 }}>
+                Our executive team brings hands-on experience across multiple industries.
+                We combine strategic vision with operational discipline to build,
+                manage, and grow a diversified portfolio of subsidiary businesses.
+                Every decision is driven by our commitment to excellence, integrity,
+                and long-term value creation.
+              </p>
+            </div>
           </div>
         </div>
       </section>

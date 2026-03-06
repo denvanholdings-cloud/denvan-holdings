@@ -133,7 +133,7 @@ export default function Contact() {
                   Business Hours
                 </h3>
                 <p style={{ color: "#64748B", fontSize: 14, lineHeight: 1.7 }}>
-                  Monday - Friday: 9:00 AM - 6:00 PM EST<br />
+                  Monday - Friday: 9:00 AM - 6:00 PM CST<br />
                   Saturday - Sunday: Closed
                 </p>
               </div>
