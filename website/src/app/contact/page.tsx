@@ -17,7 +17,7 @@ export default function Contact() {
       <section style={styles.hero}>
         <div className="container">
           <p style={styles.breadcrumb}>Home / Contact</p>
-          <h1 style={styles.heroTitle}>Get in Touch</h1>
+          <h1 className="page-hero-title">Get in Touch</h1>
           <p style={styles.heroText}>
             Whether you&apos;re a potential partner, investor, client, or entrepreneur --
             we&apos;d love to hear from you.
@@ -28,7 +28,7 @@ export default function Contact() {
       {/* Contact Content */}
       <section className="section">
         <div className="container">
-          <div style={styles.grid}>
+          <div className="contact-grid">
             {/* Form */}
             <div>
               <h2 style={{ fontSize: 24, fontWeight: 600, color: "#1B2A4A", marginBottom: 8 }}>
@@ -50,11 +50,11 @@ export default function Contact() {
               ) : (
                 <form onSubmit={handleSubmit}>
                   <div style={styles.formRow}>
-                    <div className="form-group" style={{ flex: 1 }}>
+                    <div className="form-group" style={{ flex: "1 1 200px" }}>
                       <label className="form-label">First Name *</label>
                       <input type="text" className="form-input" required />
                     </div>
-                    <div className="form-group" style={{ flex: 1 }}>
+                    <div className="form-group" style={{ flex: "1 1 200px" }}>
                       <label className="form-label">Last Name *</label>
                       <input type="text" className="form-input" required />
                     </div>
@@ -175,6 +175,7 @@ const styles: Record<string, React.CSSProperties> = {
   formRow: {
     display: "flex",
     gap: 16,
+    flexWrap: "wrap" as const,
   },
   success: {
     padding: 48,

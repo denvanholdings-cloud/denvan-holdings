@@ -14,7 +14,7 @@ export default function Services() {
       <section style={styles.hero}>
         <div className="container">
           <p style={styles.breadcrumb}>Home / Services & Portfolio</p>
-          <h1 style={styles.heroTitle}>Services & Portfolio</h1>
+          <h1 className="page-hero-title">Services & Portfolio</h1>
           <p style={styles.heroText}>
             As a holding company, Denvan Holdings provides strategic management, shared
             services, and operational support to a diversified portfolio of subsidiary
@@ -34,7 +34,7 @@ export default function Services() {
             </p>
           </div>
 
-          <div style={styles.serviceGrid}>
+          <div className="service-grid">
             {[
               {
                 title: "Corporate Strategy",
@@ -193,7 +193,7 @@ export default function Services() {
           </p>
           <div style={{ display: "flex", gap: 16, justifyContent: "center", flexWrap: "wrap" }}>
             <Link href="/contact" className="btn btn-primary">Discuss a Partnership</Link>
-            <Link href="/investors" className="btn btn-secondary">Investor Information</Link>
+            <Link href="/investors" className="btn btn-outline">Investor Information</Link>
           </div>
         </div>
       </section>

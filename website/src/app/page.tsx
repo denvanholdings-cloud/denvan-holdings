@@ -15,7 +15,7 @@ export default function Home() {
           <div style={{ animation: "fadeInUp 0.8s ease-out" }}>
             <p style={styles.heroBadge}>Multi-Industry Holding Company</p>
           </div>
-          <h1 className="hero-title" style={{ ...styles.heroTitle, animation: "fadeInUp 0.8s ease-out 0.15s both" }}>
+          <h1 className="hero-title" style={{ animation: "fadeInUp 0.8s ease-out 0.15s both" }}>
             Building Businesses.<br />
             <span className="font-playfair" style={{ color: "#C5A55A" }}>Creating Legacy.</span>
           </h1>
@@ -291,8 +291,8 @@ export default function Home() {
             </p>
             <div style={{ display: "flex", gap: 16, justifyContent: "center", flexWrap: "wrap" }}>
               <Link href="/contact" className="btn btn-primary">Contact Us</Link>
-              <Link href="/investors" className="btn btn-secondary">Investor Information</Link>
-              <Link href="/contact" className="btn btn-secondary">Partnership Inquiry</Link>
+              <Link href="/investors" className="btn btn-outline">Investor Information</Link>
+              <Link href="/contact" className="btn btn-outline">Partnership Inquiry</Link>
             </div>
           </AnimateOnScroll>
         </div>
@@ -305,7 +305,7 @@ const styles: Record<string, React.CSSProperties> = {
   hero: {
     background: "linear-gradient(135deg, #1B2A4A 0%, #2A3F6A 50%, #3B5998 100%)",
     color: "#FFFFFF",
-    padding: "140px 0 0",
+    padding: "100px 0 0",
     position: "relative",
     overflow: "hidden",
     minHeight: "80vh",

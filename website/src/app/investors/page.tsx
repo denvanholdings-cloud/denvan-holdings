@@ -14,7 +14,7 @@ export default function Investors() {
       <section style={styles.hero}>
         <div className="container">
           <p style={styles.breadcrumb}>Home / Investor Information</p>
-          <h1 style={styles.heroTitle}>Investor Information</h1>
+          <h1 className="page-hero-title">Investor Information</h1>
           <p style={styles.heroText}>
             Denvan Holdings offers a diversified portfolio across high-growth sectors.
             Learn about our strategy, structure, and partnership opportunities.
@@ -25,7 +25,7 @@ export default function Investors() {
       {/* Investment Thesis */}
       <section className="section">
         <div className="container">
-          <div style={styles.twoCol}>
+          <div className="two-col-sidebar">
             <div>
               <h2 className="section-title">Investment Thesis</h2>
               <p style={styles.body}>

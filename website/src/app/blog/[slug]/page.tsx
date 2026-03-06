@@ -36,7 +36,7 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
             </Link>
           </div>
           <div style={styles.badge}>{post.category}</div>
-          <h1 style={styles.heroTitle}>{post.title}</h1>
+          <h1 className="page-hero-title" style={{ color: "#FFFFFF" }}>{post.title}</h1>
           <div style={styles.meta}>
             <span>{post.date}</span>
             <span style={styles.metaDivider}>|</span>

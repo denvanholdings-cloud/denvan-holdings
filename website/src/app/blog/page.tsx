@@ -16,7 +16,7 @@ export default function Blog() {
         <div style={styles.heroOverlay} />
         <div className="container" style={{ position: "relative", zIndex: 1 }}>
           <p style={styles.breadcrumb}>Home / Insights & News</p>
-          <h1 style={styles.heroTitle}>Insights & News</h1>
+          <h1 className="page-hero-title">Insights & News</h1>
           <p style={styles.heroText}>
             Corporate updates, industry insights, and thought leadership from the
             Denvan Holdings team. Stay informed about business strategy, holding company

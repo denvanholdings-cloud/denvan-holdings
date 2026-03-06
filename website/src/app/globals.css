@@ -485,6 +485,53 @@ img {
   align-items: start;
 }
 
+/* Two-column layout (about, investors) */
+.two-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 64px;
+  align-items: start;
+}
+
+/* Two-column with sidebar (investors) */
+.two-col-sidebar {
+  display: grid;
+  grid-template-columns: 1fr 400px;
+  gap: 48px;
+  align-items: start;
+}
+
+/* Contact layout */
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 380px;
+  gap: 48px;
+  align-items: start;
+}
+
+/* Service grid (3 cols) */
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+/* Hero title */
+.hero-title {
+  font-size: 3.5rem;
+  font-weight: 700;
+  line-height: 1.15;
+  margin-bottom: 24px;
+}
+
+/* Page hero title (smaller pages) */
+.page-hero-title {
+  font-size: 2.75rem;
+  font-weight: 700;
+  margin-bottom: 16px;
+  color: #FFFFFF;
+}
+
 /* ========== RESPONSIVE - TABLET ========== */
 
 @media (max-width: 1024px) {
@@ -492,6 +539,21 @@ img {
     grid-template-columns: 1fr 280px;
     gap: 32px;
   }
+
+  .two-col-sidebar {
+    grid-template-columns: 1fr 340px;
+    gap: 32px;
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr 340px;
+    gap: 32px;
+  }
+
+  .service-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
   .grid-3 {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -589,7 +651,36 @@ img {
     gap: 32px;
   }
 
-  /* Buttons full-width on mobile */
+  /* Two-column layouts stack on mobile */
+  .two-col {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .two-col-sidebar {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .service-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Hero titles smaller on mobile */
+  .hero-title {
+    font-size: 2rem;
+  }
+
+  .page-hero-title {
+    font-size: 1.75rem;
+  }
+
+  /* Buttons on mobile */
   .btn {
     padding: 12px 24px;
     font-size: 15px;
@@ -618,5 +709,17 @@ img {
 
   .section-title {
     font-size: 1.5rem;
+  }
+
+  .hero-title {
+    font-size: 1.75rem;
+  }
+
+  .page-hero-title {
+    font-size: 1.5rem;
+  }
+
+  header .container {
+    height: 64px;
   }
 }

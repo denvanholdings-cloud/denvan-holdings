@@ -14,7 +14,7 @@ export default function About() {
       <section style={styles.hero}>
         <div className="container">
           <p style={styles.breadcrumb}>Home / About Us</p>
-          <h1 style={styles.heroTitle}>About Denvan Holdings</h1>
+          <h1 className="page-hero-title">About Denvan Holdings</h1>
           <p style={styles.heroText}>
             We are a strategic holding company that builds, acquires, and manages
             businesses across several diverse industry sectors.
@@ -25,7 +25,7 @@ export default function About() {
       {/* Our Story */}
       <section className="section">
         <div className="container">
-          <div style={styles.twoCol}>
+          <div className="two-col">
             <div>
               <h2 className="section-title">Our Story</h2>
               <p style={styles.bodyText}>
@@ -152,7 +152,7 @@ export default function About() {
       {/* Vision & Values */}
       <section className="section section-dark">
         <div className="container">
-          <div style={styles.twoCol}>
+          <div className="two-col">
             <div>
               <h2 style={{ fontSize: "2.25rem", fontWeight: 700, color: "#1B2A4A", marginBottom: 16 }}>
                 Our Vision
