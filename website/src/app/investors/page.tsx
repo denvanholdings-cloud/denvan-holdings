@@ -127,7 +127,7 @@ export default function Investors() {
       <section className="section section-dark">
         <div className="container">
           <div className="text-center" style={{ marginBottom: 48 }}>
-            <h2 style={{ fontSize: "2.25rem", fontWeight: 700, color: "#FFFFFF", marginBottom: 16 }}>
+            <h2 style={{ fontSize: "2.25rem", fontWeight: 700, color: "#1B2A4A", marginBottom: 16 }}>
               Why Partner With Denvan Holdings
             </h2>
           </div>
@@ -151,10 +151,10 @@ export default function Investors() {
               },
             ].map((item) => (
               <div key={item.title} style={styles.darkCard}>
-                <h3 style={{ fontSize: 18, fontWeight: 600, color: "#FFFFFF", marginBottom: 8 }}>
+                <h3 style={{ fontSize: 18, fontWeight: 600, color: "#1B2A4A", marginBottom: 8 }}>
                   {item.title}
                 </h3>
-                <p style={{ color: "#94A3B8", lineHeight: 1.7, fontSize: 15 }}>
+                <p style={{ color: "#64748B", lineHeight: 1.7, fontSize: 15 }}>
                   {item.desc}
                 </p>
               </div>
@@ -185,7 +185,7 @@ export default function Investors() {
 
 const styles: Record<string, React.CSSProperties> = {
   hero: {
-    background: "linear-gradient(135deg, #0F172A 0%, #1B2A4A 100%)",
+    background: "linear-gradient(135deg, #1B2A4A 0%, #2A3F6A 100%)",
     padding: "80px 0",
     color: "#FFFFFF",
   },
@@ -222,8 +222,8 @@ const styles: Record<string, React.CSSProperties> = {
     borderBottom: "1px solid #E2E8F0",
   },
   darkCard: {
-    background: "rgba(255,255,255,0.05)",
-    border: "1px solid rgba(255,255,255,0.1)",
+    background: "#FFFFFF",
+    border: "1px solid #E2E8F0",
     borderRadius: 12,
     padding: 28,
   },

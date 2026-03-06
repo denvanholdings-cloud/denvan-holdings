@@ -174,8 +174,8 @@ export default function Blog() {
       <section className="section section-dark text-center">
         <div className="container">
           <AnimateOnScroll animation="fade-up">
-            <h2 className="section-title" style={{ color: "#FFFFFF" }}>Stay Informed</h2>
-            <p className="section-subtitle" style={{ margin: "16px auto 32px", color: "#94A3B8" }}>
+            <h2 className="section-title">Stay Informed</h2>
+            <p className="section-subtitle" style={{ margin: "16px auto 32px" }}>
               Subscribe to The Holdings Report -- our monthly newsletter with corporate
               updates, industry insights, and strategic perspectives from Denvan Holdings.
             </p>
@@ -184,11 +184,11 @@ export default function Blog() {
                 type="email"
                 placeholder="Enter your email address"
                 className="form-input"
-                style={{ maxWidth: 400, background: "rgba(255,255,255,0.1)", border: "1px solid rgba(255,255,255,0.2)", color: "#FFFFFF" }}
+                style={{ maxWidth: 400 }}
               />
               <button type="submit" className="btn btn-primary">Subscribe</button>
             </form>
-            <p style={{ fontSize: 13, color: "#64748B", marginTop: 12 }}>
+            <p style={{ fontSize: 13, color: "#94A3B8", marginTop: 12 }}>
               No spam. Unsubscribe anytime. Join business leaders who trust our insights.
             </p>
           </AnimateOnScroll>
@@ -200,7 +200,7 @@ export default function Blog() {
 
 const styles: Record<string, React.CSSProperties> = {
   hero: {
-    background: "linear-gradient(135deg, #0F172A 0%, #1B2A4A 100%)",
+    background: "linear-gradient(135deg, #1B2A4A 0%, #2A3F6A 100%)",
     padding: "100px 0 80px",
     color: "#FFFFFF",
     position: "relative",

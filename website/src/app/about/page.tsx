@@ -154,7 +154,7 @@ export default function About() {
         <div className="container">
           <div style={styles.twoCol}>
             <div>
-              <h2 style={{ fontSize: "2.25rem", fontWeight: 700, color: "#FFFFFF", marginBottom: 16 }}>
+              <h2 style={{ fontSize: "2.25rem", fontWeight: 700, color: "#1B2A4A", marginBottom: 16 }}>
                 Our Vision
               </h2>
               <p className="font-playfair" style={{ fontSize: 22, color: "#C5A55A", lineHeight: 1.5, marginBottom: 24 }}>
@@ -162,14 +162,14 @@ export default function About() {
                 operational excellence, strategic growth, and the development of
                 high-performing subsidiary businesses.
               </p>
-              <p style={{ color: "#94A3B8", lineHeight: 1.7 }}>
+              <p style={{ color: "#64748B", lineHeight: 1.7 }}>
                 We envision a future where Denvan Holdings is synonymous with
                 professional management, scalable growth, and meaningful impact
                 across every industry we serve.
               </p>
             </div>
             <div>
-              <h2 style={{ fontSize: "2.25rem", fontWeight: 700, color: "#FFFFFF", marginBottom: 24 }}>
+              <h2 style={{ fontSize: "2.25rem", fontWeight: 700, color: "#1B2A4A", marginBottom: 24 }}>
                 Our Core Values
               </h2>
               {[
@@ -182,8 +182,8 @@ export default function About() {
                 <div key={value.name} style={styles.valueRow}>
                   <div style={styles.valueDot} />
                   <div>
-                    <h4 style={{ color: "#FFFFFF", fontWeight: 600, marginBottom: 4 }}>{value.name}</h4>
-                    <p style={{ color: "#94A3B8", fontSize: 14 }}>{value.desc}</p>
+                    <h4 style={{ color: "#1B2A4A", fontWeight: 600, marginBottom: 4 }}>{value.name}</h4>
+                    <p style={{ color: "#64748B", fontSize: 14 }}>{value.desc}</p>
                   </div>
                 </div>
               ))}
@@ -212,7 +212,7 @@ export default function About() {
 
 const styles: Record<string, React.CSSProperties> = {
   hero: {
-    background: "linear-gradient(135deg, #0D2818 0%, #1B2A4A 100%)",
+    background: "linear-gradient(135deg, #1B2A4A 0%, #2A3F6A 100%)",
     padding: "80px 0",
     color: "#FFFFFF",
   },

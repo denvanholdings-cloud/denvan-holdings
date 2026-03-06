@@ -11,7 +11,7 @@ const categoryStyles: Record<string, { gradient: string; icon: React.ReactNode }
     ),
   },
   "Company News": {
-    gradient: "linear-gradient(135deg, #0F172A 0%, #1E3A5F 50%, #2A3F6A 100%)",
+    gradient: "linear-gradient(135deg, #1B2A4A 0%, #1E3A5F 50%, #2A3F6A 100%)",
     icon: (
       <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#C5A55A" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
         <rect x="2" y="7" width="20" height="14" rx="2" ry="2" />
@@ -31,7 +31,7 @@ const categoryStyles: Record<string, { gradient: string; icon: React.ReactNode }
     ),
   },
   "Industry Insights": {
-    gradient: "linear-gradient(135deg, #0F172A 0%, #1B2A4A 50%, #344B6E 100%)",
+    gradient: "linear-gradient(135deg, #1B2A4A 0%, #1B2A4A 50%, #344B6E 100%)",
     icon: (
       <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#C5A55A" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
         <polyline points="22 12 18 12 15 21 9 3 6 12 2 12" />

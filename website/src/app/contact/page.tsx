@@ -159,7 +159,7 @@ export default function Contact() {
 
 const styles: Record<string, React.CSSProperties> = {
   hero: {
-    background: "linear-gradient(135deg, #0F172A 0%, #1B2A4A 100%)",
+    background: "linear-gradient(135deg, #1B2A4A 0%, #2A3F6A 100%)",
     padding: "80px 0",
     color: "#FFFFFF",
   },

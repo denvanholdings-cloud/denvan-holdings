@@ -62,7 +62,7 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
                 }
                 if (block.startsWith("**") && block.endsWith("**")) {
                   return (
-                    <p key={i} style={{ ...styles.paragraph, fontWeight: 600, color: "#0F172A" }}>
+                    <p key={i} style={{ ...styles.paragraph, fontWeight: 600, color: "#1B2A4A" }}>
                       {block.replace(/\*\*/g, "")}
                     </p>
                   );
@@ -73,7 +73,7 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
                   <p key={i} style={styles.paragraph}>
                     {parts.map((part, j) => {
                       if (part.startsWith("**") && part.endsWith("**")) {
-                        return <strong key={j} style={{ color: "#0F172A" }}>{part.replace(/\*\*/g, "")}</strong>;
+                        return <strong key={j} style={{ color: "#1B2A4A" }}>{part.replace(/\*\*/g, "")}</strong>;
                       }
                       return <span key={j}>{part}</span>;
                     })}
@@ -166,7 +166,7 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
 
 const styles: Record<string, React.CSSProperties> = {
   hero: {
-    background: "linear-gradient(135deg, #0F172A 0%, #1B2A4A 100%)",
+    background: "linear-gradient(135deg, #1B2A4A 0%, #2A3F6A 100%)",
     padding: "100px 0 60px",
     color: "#FFFFFF",
     position: "relative",

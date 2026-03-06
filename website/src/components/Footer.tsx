@@ -78,7 +78,7 @@ export default function Footer() {
 
 const styles: Record<string, React.CSSProperties> = {
   footer: {
-    background: "#0F172A",
+    background: "#1B2A4A",
     color: "#94A3B8",
     padding: "64px 0 0",
   },
@@ -96,19 +96,19 @@ const styles: Record<string, React.CSSProperties> = {
   logoD: {
     fontWeight: 700,
     fontSize: 20,
-    color: "#0F172A",
+    color: "#1B2A4A",
     letterSpacing: "-1px",
   },
   logoH: {
     fontWeight: 700,
     fontSize: 20,
-    color: "#0F172A",
+    color: "#1B2A4A",
     letterSpacing: "-1px",
   },
   logoDot: {
     fontWeight: 700,
     fontSize: 24,
-    color: "#0F172A",
+    color: "#1B2A4A",
     lineHeight: 0.6,
     marginLeft: 1,
   },

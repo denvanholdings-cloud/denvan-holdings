@@ -136,8 +136,8 @@ export default function Home() {
         <div className="container">
           <AnimateOnScroll animation="fade-up">
             <div className="text-center" style={{ marginBottom: 56 }}>
-              <h2 className="section-title" style={{ color: "#FFFFFF" }}>How We Operate</h2>
-              <p className="section-subtitle" style={{ margin: "16px auto 0", color: "#94A3B8" }}>
+              <h2 className="section-title">How We Operate</h2>
+              <p className="section-subtitle" style={{ margin: "16px auto 0" }}>
                 A streamlined approach to building and managing a diversified business portfolio.
               </p>
             </div>
@@ -151,8 +151,8 @@ export default function Home() {
             ].map((item) => (
               <div key={item.step} style={styles.stepCard}>
                 <div style={styles.stepNumber}>{item.step}</div>
-                <h3 style={{ fontSize: 18, fontWeight: 600, color: "#FFFFFF", marginBottom: 8 }}>{item.title}</h3>
-                <p style={{ fontSize: 14, color: "#94A3B8", lineHeight: 1.6 }}>{item.desc}</p>
+                <h3 style={{ fontSize: 18, fontWeight: 600, color: "#1B2A4A", marginBottom: 8 }}>{item.title}</h3>
+                <p style={{ fontSize: 14, color: "#64748B", lineHeight: 1.6 }}>{item.desc}</p>
               </div>
             ))}
           </div>
@@ -282,10 +282,10 @@ export default function Home() {
         <div style={styles.ctaGlow} />
         <div className="container text-center" style={{ position: "relative", zIndex: 1 }}>
           <AnimateOnScroll animation="fade-up">
-            <h2 style={{ fontSize: "2.25rem", fontWeight: 700, color: "#FFFFFF", marginBottom: 16 }}>
+            <h2 style={{ fontSize: "2.25rem", fontWeight: 700, color: "#1B2A4A", marginBottom: 16 }}>
               Ready to Build Something Together?
             </h2>
-            <p style={{ fontSize: 18, color: "#94A3B8", marginBottom: 32, maxWidth: 600, margin: "0 auto 32px" }}>
+            <p style={{ fontSize: 18, color: "#64748B", marginBottom: 32, maxWidth: 600, margin: "0 auto 32px" }}>
               Whether you&apos;re a potential partner, investor, or entrepreneur looking for
               corporate support -- we&apos;d love to hear from you.
             </p>
@@ -303,7 +303,7 @@ export default function Home() {
 
 const styles: Record<string, React.CSSProperties> = {
   hero: {
-    background: "linear-gradient(135deg, #0F172A 0%, #1B2A4A 40%, #2A3F6A 100%)",
+    background: "linear-gradient(135deg, #1B2A4A 0%, #2A3F6A 50%, #3B5998 100%)",
     color: "#FFFFFF",
     padding: "140px 0 0",
     position: "relative",
@@ -371,7 +371,7 @@ const styles: Record<string, React.CSSProperties> = {
   },
   heroStats: {
     borderTop: "1px solid rgba(255,255,255,0.1)",
-    background: "rgba(0,0,0,0.15)",
+    background: "rgba(0,0,0,0.1)",
     backdropFilter: "blur(12px)",
     position: "relative",
     zIndex: 1,
@@ -416,8 +416,8 @@ const styles: Record<string, React.CSSProperties> = {
   stepCard: {
     padding: 28,
     borderRadius: 12,
-    background: "rgba(255,255,255,0.05)",
-    border: "1px solid rgba(255,255,255,0.1)",
+    background: "#FFFFFF",
+    border: "1px solid #E2E8F0",
     transition: "all 0.3s ease",
   },
   stepNumber: {
@@ -434,12 +434,11 @@ const styles: Record<string, React.CSSProperties> = {
     transition: "all 0.3s ease",
   },
   cta: {
-    background: "linear-gradient(135deg, #0F172A 0%, #1B2A4A 50%, #0F172A 100%)",
-    backgroundSize: "200% 200%",
-    animation: "gradientShift 8s ease infinite",
+    background: "#F8FAFC",
     padding: "96px 0",
     position: "relative",
     overflow: "hidden",
+    borderTop: "1px solid #E2E8F0",
   },
   ctaGlow: {
     position: "absolute",

@@ -184,10 +184,10 @@ export default function Services() {
       {/* CTA */}
       <section style={styles.cta}>
         <div className="container text-center">
-          <h2 style={{ fontSize: "2.25rem", fontWeight: 700, color: "#FFFFFF", marginBottom: 16 }}>
+          <h2 style={{ fontSize: "2.25rem", fontWeight: 700, color: "#1B2A4A", marginBottom: 16 }}>
             Interested in Joining Our Portfolio?
           </h2>
-          <p style={{ color: "#94A3B8", fontSize: 18, maxWidth: 560, margin: "0 auto 32px" }}>
+          <p style={{ color: "#64748B", fontSize: 18, maxWidth: 560, margin: "0 auto 32px" }}>
             We&apos;re always evaluating new business opportunities and partnerships.
             Let&apos;s discuss how Denvan Holdings can support your venture.
           </p>
@@ -203,7 +203,7 @@ export default function Services() {
 
 const styles: Record<string, React.CSSProperties> = {
   hero: {
-    background: "linear-gradient(135deg, #0F172A 0%, #1B2A4A 100%)",
+    background: "linear-gradient(135deg, #1B2A4A 0%, #2A3F6A 100%)",
     padding: "80px 0",
     color: "#FFFFFF",
   },
@@ -242,7 +242,8 @@ const styles: Record<string, React.CSSProperties> = {
     marginBottom: 12,
   },
   cta: {
-    background: "linear-gradient(135deg, #0F172A 0%, #1B2A4A 100%)",
+    background: "#F8FAFC",
     padding: "96px 0",
+    borderTop: "1px solid #E2E8F0",
   },
 };

@@ -6,7 +6,7 @@
   --white: #FFFFFF;
   --slate: #64748B;
   --light-gray: #F1F5F9;
-  --charcoal: #0F172A;
+  --charcoal: #1B2A4A;
   --gold-light: #D4BA7A;
   --gold-dark: #A68B3E;
   --navy-light: #2A3F6A;
@@ -268,8 +268,8 @@ img {
 }
 
 .section-dark {
-  background: var(--charcoal);
-  color: var(--white);
+  background: #F1F5F9;
+  color: var(--charcoal);
   position: relative;
   overflow: hidden;
 }
@@ -298,7 +298,7 @@ img {
 }
 
 .section-dark .section-title {
-  color: var(--white);
+  color: var(--charcoal);
 }
 
 .section-subtitle {
@@ -310,7 +310,7 @@ img {
 }
 
 .section-dark .section-subtitle {
-  color: #94A3B8;
+  color: #64748B;
 }
 
 /* ========== GRIDS ========== */
