@@ -294,8 +294,6 @@ export default function Home() {
                 height: 200,
                 width: "auto",
                 borderRadius: 16,
-                background: "rgba(255,255,255,0.95)",
-                padding: 16,
               }}
             />
             <p className="font-playfair" style={{ fontSize: 28, color: "#B8942A", marginBottom: 8 }}>

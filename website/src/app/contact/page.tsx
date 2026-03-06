@@ -103,17 +103,17 @@ export default function Contact() {
                 </h3>
 
                 {[
-                  { label: "General Inquiries", value: "info@denvanholdings.com" },
-                  { label: "Partnerships", value: "partnerships@denvanholdings.com" },
-                  { label: "Investor Relations", value: "investors@denvanholdings.com" },
-                  { label: "Careers", value: "careers@denvanholdings.com" },
-                  { label: "Phone", value: "(202) 415-9373" },
+                  { label: "General Inquiries", value: "info@denvanholdings.com", href: "mailto:info@denvanholdings.com" },
+                  { label: "Partnerships", value: "partnerships@denvanholdings.com", href: "mailto:partnerships@denvanholdings.com" },
+                  { label: "Investor Relations", value: "investors@denvanholdings.com", href: "mailto:investors@denvanholdings.com" },
+                  { label: "Careers", value: "careers@denvanholdings.com", href: "mailto:careers@denvanholdings.com" },
+                  { label: "Phone", value: "(202) 415-9373", href: "tel:+12024159373" },
                 ].map((item) => (
                   <div key={item.label} style={styles.infoItem}>
                     <div style={{ fontSize: 12, fontWeight: 600, color: "#64748B", textTransform: "uppercase", letterSpacing: "0.05em", marginBottom: 4 }}>
                       {item.label}
                     </div>
-                    <div style={{ color: "#1B5E37", fontWeight: 500 }}>{item.value}</div>
+                    <a href={item.href} style={{ color: "#1B5E37", fontWeight: 500, textDecoration: "none" }}>{item.value}</a>
                   </div>
                 ))}
 

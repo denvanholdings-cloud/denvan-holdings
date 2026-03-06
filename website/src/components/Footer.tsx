@@ -20,8 +20,6 @@ export default function Footer() {
                   height: 100,
                   width: "auto",
                   borderRadius: 12,
-                  background: "rgba(255,255,255,0.95)",
-                  padding: 8,
                 }}
               />
             </div>
@@ -57,8 +55,8 @@ export default function Footer() {
             <div>
               <h4 style={styles.linkTitle}>Contact</h4>
               <ul style={styles.linkList}>
-                <li style={styles.contactItem}>info@denvanholdings.com</li>
-                <li style={styles.contactItem}>(202) 415-9373</li>
+                <li style={styles.contactItem}><a href="mailto:info@denvanholdings.com" style={styles.link}>info@denvanholdings.com</a></li>
+                <li style={styles.contactItem}><a href="tel:+12024159373" style={styles.link}>(202) 415-9373</a></li>
                 <li style={styles.contactItem}>
                   5900 Balcones Drive, STE 100<br />
                   Austin, TX 78731

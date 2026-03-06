@@ -471,9 +471,21 @@ img {
 .mb-4 { margin-bottom: 16px; }
 .mb-8 { margin-bottom: 32px; }
 
+/* Article layout */
+.article-layout {
+  display: grid;
+  grid-template-columns: 1fr 340px;
+  gap: 48px;
+  align-items: start;
+}
+
 /* ========== RESPONSIVE - TABLET ========== */
 
 @media (max-width: 1024px) {
+  .article-layout {
+    grid-template-columns: 1fr 280px;
+    gap: 32px;
+  }
   .grid-3 {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -568,6 +580,12 @@ img {
   /* Header logo smaller on mobile */
   header img {
     height: 50px !important;
+  }
+
+  /* Article layout stacks on mobile */
+  .article-layout {
+    grid-template-columns: 1fr;
+    gap: 32px;
   }
 
   /* Buttons full-width on mobile */
