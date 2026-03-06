@@ -115,7 +115,7 @@ export default function Services() {
           <div className="text-center" style={{ marginBottom: 48 }}>
             <h2 className="section-title">Portfolio Sectors</h2>
             <p className="section-subtitle" style={{ margin: "16px auto 48px" }}>
-              Denvan Holdings operates across four strategic industry sectors, each
+              Denvan Holdings operates across several strategic industry sectors, each
               chosen for its growth potential and alignment with our expertise.
             </p>
           </div>

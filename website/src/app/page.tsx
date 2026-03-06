@@ -87,8 +87,8 @@ export default function Home() {
           <div className="text-center" style={{ marginBottom: 48 }}>
             <h2 className="section-title">Our Portfolio Sectors</h2>
             <p className="section-subtitle" style={{ margin: "16px auto 48px" }}>
-              Denvan Holdings operates across four key industry sectors, with plans
-              for strategic expansion.
+              Denvan Holdings operates across several key industry sectors, with plans
+              for continued strategic expansion.
             </p>
           </div>
           <div className="grid-4">

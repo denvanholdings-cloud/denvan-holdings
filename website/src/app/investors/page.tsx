@@ -46,7 +46,7 @@ export default function Investors() {
                 Portfolio at a Glance
               </h3>
               {[
-                { label: "Industry Sectors", value: "4" },
+                { label: "Industry Sectors", value: "Multiple" },
                 { label: "Business Model", value: "Multi-Industry Holdings" },
                 { label: "Revenue Strategy", value: "Diversified Streams" },
                 { label: "Growth Approach", value: "Organic + Acquisition" },
@@ -135,7 +135,7 @@ export default function Investors() {
             {[
               {
                 title: "Diversified Revenue",
-                desc: "Multiple business lines across four industries reduce concentration risk and create multiple paths to growth.",
+                desc: "Multiple business lines across several industries reduce concentration risk and create multiple paths to growth.",
               },
               {
                 title: "Professional Management",

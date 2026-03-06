@@ -44,7 +44,7 @@ export default function About() {
                 that makes each business unique.
               </p>
               <p style={styles.bodyText}>
-                Today, Denvan Holdings operates across four industry sectors, with a
+                Today, Denvan Holdings operates across several industry sectors, with a
                 clear roadmap for strategic growth and acquisition. Our goal is to
                 build a portfolio of high-performing businesses that create lasting
                 value for clients, communities, and stakeholders.
@@ -53,7 +53,7 @@ export default function About() {
             <div style={styles.storyCard}>
               <div style={styles.statGrid}>
                 {[
-                  { number: "4", label: "Industry Sectors" },
+                  { number: "Multiple", label: "Industry Sectors" },
                   { number: "1", label: "Parent Company" },
                   { number: "100%", label: "Commitment to Excellence" },
                   { number: "2026", label: "Year Founded" },
