@@ -7,10 +7,10 @@ export default function Footer() {
   return (
     <footer style={styles.footer}>
       <div className="container">
-        <div style={styles.top}>
-          <div style={styles.brand}>
+        <div className="footer-top">
+          <div>
             <div style={styles.logoRow}>
-              <Image src="/denvan-holdings/images/logo.png" alt="Denvan Holdings" width={40} height={40} style={{ borderRadius: 8, boxShadow: "0 0 0 2px #1B4A2E" }} />
+              <Image src="/denvan-holdings/images/logo.png" alt="Denvan Holdings" width={48} height={48} style={{ borderRadius: 10, boxShadow: "0 0 0 2px #1B4A2E" }} />
               <div>
                 <div style={styles.logoText}>DENVAN HOLDINGS</div>
                 <div style={styles.logoSub}>LLC</div>
@@ -26,7 +26,7 @@ export default function Footer() {
             </p>
           </div>
 
-          <div style={styles.links}>
+          <div className="footer-links">
             <div>
               <h4 style={styles.linkTitle}>Company</h4>
               <ul style={styles.linkList}>
@@ -59,11 +59,11 @@ export default function Footer() {
           </div>
         </div>
 
-        <div style={styles.bottom}>
+        <div className="footer-bottom">
           <p style={styles.copyright}>
             &copy; {currentYear} Denvan Holdings LLC. All rights reserved.
           </p>
-          <div style={styles.bottomLinks}>
+          <div style={{ display: "flex", gap: 24 }}>
             <Link href="#" style={styles.bottomLink}>Privacy Policy</Link>
             <Link href="#" style={styles.bottomLink}>Terms of Service</Link>
           </div>
@@ -79,36 +79,15 @@ const styles: Record<string, React.CSSProperties> = {
     color: "#94A3B8",
     padding: "64px 0 0",
   },
-  top: {
-    display: "grid",
-    gridTemplateColumns: "1fr 2fr",
-    gap: 64,
-    paddingBottom: 48,
-    borderBottom: "1px solid #1B4A2E",
-  },
-  brand: {},
   logoRow: {
     display: "flex",
     alignItems: "center",
-    gap: 12,
+    gap: 14,
     marginBottom: 16,
-  },
-  logoMark: {
-    width: 40,
-    height: 40,
-    background: "#B8942A",
-    color: "#0D2818",
-    display: "flex",
-    alignItems: "center",
-    justifyContent: "center",
-    fontWeight: 700,
-    fontSize: 20,
-    borderRadius: 8,
-    fontFamily: "'Playfair Display', serif",
   },
   logoText: {
     fontWeight: 700,
-    fontSize: 16,
+    fontSize: 18,
     color: "#FFFFFF",
     letterSpacing: "0.05em",
     lineHeight: 1.2,
@@ -129,11 +108,6 @@ const styles: Record<string, React.CSSProperties> = {
     fontSize: 14,
     lineHeight: 1.7,
     color: "#94A3B8",
-  },
-  links: {
-    display: "grid",
-    gridTemplateColumns: "repeat(3, 1fr)",
-    gap: 32,
   },
   linkTitle: {
     color: "#FFFFFF",
@@ -158,18 +132,8 @@ const styles: Record<string, React.CSSProperties> = {
     fontSize: 14,
     lineHeight: 1.5,
   },
-  bottom: {
-    display: "flex",
-    justifyContent: "space-between",
-    alignItems: "center",
-    padding: "24px 0",
-  },
   copyright: {
     fontSize: 13,
-  },
-  bottomLinks: {
-    display: "flex",
-    gap: 24,
   },
   bottomLink: {
     fontSize: 13,

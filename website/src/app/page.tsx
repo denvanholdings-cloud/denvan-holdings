@@ -16,7 +16,7 @@ export default function Home() {
           <div style={{ animation: "fadeInUp 0.8s ease-out" }}>
             <p style={styles.heroBadge}>Multi-Industry Holding Company</p>
           </div>
-          <h1 style={{ ...styles.heroTitle, animation: "fadeInUp 0.8s ease-out 0.15s both" }}>
+          <h1 className="hero-title" style={{ ...styles.heroTitle, animation: "fadeInUp 0.8s ease-out 0.15s both" }}>
             Building Businesses.<br />
             <span className="font-playfair" style={{ color: "#B8942A" }}>Creating Legacy.</span>
           </h1>
@@ -36,7 +36,7 @@ export default function Home() {
         </div>
         <div style={styles.heroStats}>
           <div className="container">
-            <div style={styles.statsRow}>
+            <div className="hero-stats-row">
               {[
                 { value: <Counter end={100} suffix="%" />, label: "Commitment to Excellence" },
                 { value: "Multiple", label: "Industry Sectors" },
@@ -132,6 +132,34 @@ export default function Home() {
         </div>
       </section>
 
+      {/* How It Works */}
+      <section className="section section-dark">
+        <div className="container">
+          <AnimateOnScroll animation="fade-up">
+            <div className="text-center" style={{ marginBottom: 56 }}>
+              <h2 className="section-title" style={{ color: "#FFFFFF" }}>How We Operate</h2>
+              <p className="section-subtitle" style={{ margin: "16px auto 0", color: "#94A3B8" }}>
+                A streamlined approach to building and managing a diversified business portfolio.
+              </p>
+            </div>
+          </AnimateOnScroll>
+          <div className="grid-4">
+            {[
+              { step: "01", title: "Identify", desc: "We research market opportunities and evaluate potential business ventures across diverse industries." },
+              { step: "02", title: "Launch or Acquire", desc: "We establish new DBAs under Denvan Holdings or acquire existing businesses with strong fundamentals." },
+              { step: "03", title: "Integrate & Support", desc: "Each subsidiary receives shared services, strategic guidance, and operational infrastructure from day one." },
+              { step: "04", title: "Scale & Grow", desc: "With corporate backing and proven systems, each business is positioned for sustainable, long-term growth." },
+            ].map((item) => (
+              <div key={item.step} style={styles.stepCard}>
+                <div style={styles.stepNumber}>{item.step}</div>
+                <h3 style={{ fontSize: 18, fontWeight: 600, color: "#FFFFFF", marginBottom: 8 }}>{item.title}</h3>
+                <p style={{ fontSize: 14, color: "#94A3B8", lineHeight: 1.6 }}>{item.desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Portfolio */}
       <section className="section section-light">
         <div className="container">
@@ -188,7 +216,7 @@ export default function Home() {
       {/* Mission & Values */}
       <section className="section">
         <div className="container">
-          <div style={styles.missionGrid}>
+          <div className="mission-grid">
             <AnimateOnScroll animation="fade-left">
               <div>
                 <h2 className="section-title">Our Mission</h2>
@@ -197,18 +225,26 @@ export default function Home() {
                   deliver exceptional value across industries -- empowering entrepreneurs,
                   serving communities, and creating lasting impact.
                 </p>
+                <p style={{ fontSize: 16, color: "#64748B", lineHeight: 1.7, marginBottom: 32 }}>
+                  We believe every great business deserves strong corporate backing.
+                  Through shared resources, strategic guidance, and operational support,
+                  we help ambitious businesses reach their full potential -- while building
+                  a legacy that lasts for generations.
+                </p>
                 <Link href="/about" className="btn btn-outline">
                   About Denvan Holdings
                 </Link>
               </div>
             </AnimateOnScroll>
             <AnimateOnScroll animation="fade-right" delay={0.2}>
-              <div style={styles.valuesGrid}>
+              <div className="values-grid">
                 {[
                   { name: "Excellence", desc: "Highest standards in everything we do" },
                   { name: "Integrity", desc: "Transparency and ethical responsibility" },
                   { name: "Innovation", desc: "Embracing new ideas and technologies" },
                   { name: "Scalability", desc: "Designed to grow efficiently" },
+                  { name: "Community", desc: "Creating impact in the markets we serve" },
+                  { name: "Resilience", desc: "Diversified strength through any market" },
                 ].map((value) => (
                   <div key={value.name} style={styles.valueItem}>
                     <h4 style={{ fontWeight: 600, color: "#1B5E37", marginBottom: 4 }}>{value.name}</h4>
@@ -221,6 +257,27 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Testimonial / Trust */}
+      <section className="section section-light">
+        <div className="container text-center">
+          <AnimateOnScroll animation="fade-up">
+            <div style={{ maxWidth: 700, margin: "0 auto" }}>
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#B8942A" strokeWidth="1.5" style={{ marginBottom: 24, opacity: 0.6 }}>
+                <path d="M3 21c3 0 7-1 7-8V5c0-1.25-.756-2.017-2-2H4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 1-1 2-2 2s-1 .008-1 1.031V20c0 1 0 1 1 1z"/>
+                <path d="M15 21c3 0 7-1 7-8V5c0-1.25-.757-2.017-2-2h-4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2h.75c0 2.25.25 4-2.75 4v3c0 1 0 1 1 1z"/>
+              </svg>
+              <p className="font-playfair" style={{ fontSize: 24, color: "#1B5E37", lineHeight: 1.5, marginBottom: 24 }}>
+                We don&apos;t just manage businesses -- we build ecosystems where
+                entrepreneurship thrives, innovation accelerates, and lasting value is
+                created for every stakeholder.
+              </p>
+              <p style={{ color: "#B8942A", fontWeight: 600, fontSize: 16 }}>Denvan Holdings Leadership</p>
+              <p style={{ color: "#94A3B8", fontSize: 14 }}>Austin, Texas</p>
+            </div>
+          </AnimateOnScroll>
+        </div>
+      </section>
+
       {/* Logo Banner */}
       <section style={styles.logoBanner}>
         <div className="container text-center">
@@ -228,14 +285,14 @@ export default function Home() {
             <Image
               src="/denvan-holdings/images/logo.png"
               alt="Denvan Holdings"
-              width={120}
-              height={120}
-              style={{ margin: "0 auto 24px", display: "block", borderRadius: 12 }}
+              width={140}
+              height={140}
+              style={{ margin: "0 auto 24px", display: "block", borderRadius: 16, boxShadow: "0 0 0 3px rgba(27, 74, 46, 0.5)" }}
             />
-            <p className="font-playfair" style={{ fontSize: 24, color: "#B8942A", marginBottom: 8 }}>
+            <p className="font-playfair" style={{ fontSize: 28, color: "#B8942A", marginBottom: 8 }}>
               Denvan Holdings LLC
             </p>
-            <p style={{ color: "#94A3B8", fontSize: 16 }}>
+            <p style={{ color: "#94A3B8", fontSize: 18 }}>
               Building Businesses. Creating Legacy.
             </p>
           </AnimateOnScroll>
@@ -305,7 +362,7 @@ const styles: Record<string, React.CSSProperties> = {
   },
   heroBadge: {
     display: "inline-block",
-    padding: "6px 16px",
+    padding: "8px 20px",
     background: "rgba(184, 148, 42, 0.15)",
     color: "#B8942A",
     borderRadius: 100,
@@ -340,12 +397,6 @@ const styles: Record<string, React.CSSProperties> = {
     backdropFilter: "blur(12px)",
     position: "relative",
     zIndex: 1,
-  },
-  statsRow: {
-    display: "grid",
-    gridTemplateColumns: "repeat(4, 1fr)",
-    gap: 32,
-    padding: "32px 0",
   },
   statItem: {
     textAlign: "center",
@@ -384,16 +435,19 @@ const styles: Record<string, React.CSSProperties> = {
     color: "#64748B",
     lineHeight: 1.6,
   },
-  missionGrid: {
-    display: "grid",
-    gridTemplateColumns: "1fr 1fr",
-    gap: 64,
-    alignItems: "center",
+  stepCard: {
+    padding: 28,
+    borderRadius: 12,
+    background: "rgba(255,255,255,0.05)",
+    border: "1px solid rgba(255,255,255,0.1)",
+    transition: "all 0.3s ease",
   },
-  valuesGrid: {
-    display: "grid",
-    gridTemplateColumns: "1fr 1fr",
-    gap: 20,
+  stepNumber: {
+    fontSize: 36,
+    fontWeight: 700,
+    color: "#B8942A",
+    marginBottom: 12,
+    fontFamily: "'Playfair Display', serif",
   },
   valueItem: {
     padding: 24,
@@ -403,7 +457,7 @@ const styles: Record<string, React.CSSProperties> = {
   },
   logoBanner: {
     background: "linear-gradient(135deg, #0D2818, #1B5E37)",
-    padding: "64px 0",
+    padding: "80px 0",
   },
   cta: {
     background: "linear-gradient(135deg, #0D2818 0%, #1B5E37 50%, #0D2818 100%)",

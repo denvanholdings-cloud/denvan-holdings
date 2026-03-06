@@ -11,7 +11,7 @@ export default function Header() {
     <header style={styles.header}>
       <div className="container" style={styles.inner}>
         <Link href="/" style={styles.logo}>
-          <Image src="/denvan-holdings/images/logo.png" alt="Denvan Holdings" width={48} height={48} style={{ borderRadius: 8 }} />
+          <Image src="/denvan-holdings/images/logo.png" alt="Denvan Holdings" width={56} height={56} style={{ borderRadius: 10 }} />
           <div>
             <div style={styles.logoText}>DENVAN HOLDINGS</div>
             <div style={styles.logoSub}>LLC</div>
@@ -84,30 +84,17 @@ const styles: Record<string, React.CSSProperties> = {
     display: "flex",
     alignItems: "center",
     justifyContent: "space-between",
-    height: 80,
+    height: 88,
   },
   logo: {
     display: "flex",
     alignItems: "center",
-    gap: 12,
+    gap: 14,
     textDecoration: "none",
-  },
-  logoMark: {
-    width: 44,
-    height: 44,
-    background: "#1B5E37",
-    color: "#B8942A",
-    display: "flex",
-    alignItems: "center",
-    justifyContent: "center",
-    fontWeight: 700,
-    fontSize: 22,
-    borderRadius: 8,
-    fontFamily: "'Playfair Display', serif",
   },
   logoText: {
     fontWeight: 700,
-    fontSize: 18,
+    fontSize: 20,
     color: "#1B5E37",
     letterSpacing: "0.05em",
     lineHeight: 1.2,
@@ -132,7 +119,7 @@ const styles: Record<string, React.CSSProperties> = {
   mobileToggle: {
     display: "none",
     flexDirection: "column",
-    gap: 5,
+    gap: 6,
     background: "none",
     border: "none",
     cursor: "pointer",
@@ -140,9 +127,10 @@ const styles: Record<string, React.CSSProperties> = {
   },
   hamburger: {
     display: "block",
-    width: 24,
-    height: 2,
+    width: 26,
+    height: 2.5,
     background: "#1B5E37",
+    borderRadius: 2,
     transition: "all 0.3s",
   },
   mobileMenu: {
@@ -153,13 +141,10 @@ const styles: Record<string, React.CSSProperties> = {
     borderTop: "1px solid #E2E8F0",
   },
   mobileLink: {
-    padding: "12px 0",
-    fontSize: 16,
+    padding: "14px 0",
+    fontSize: 17,
     fontWeight: 500,
     color: "#1B5E37",
     borderBottom: "1px solid #F1F5F9",
   },
 };
-
-// Add responsive styles via CSS - the mobile toggle is hidden by default
-// and shown via media query in globals.css
