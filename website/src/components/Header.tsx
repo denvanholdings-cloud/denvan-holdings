@@ -10,7 +10,11 @@ export default function Header() {
     <header style={styles.header}>
       <div className="container" style={styles.inner}>
         <Link href="/" style={styles.logo}>
-          <div style={styles.logoMark}>D</div>
+          <div style={styles.logoMark}>
+            <span style={styles.logoD}>D</span>
+            <span style={styles.logoH}>H</span>
+            <span style={styles.logoDot}>.</span>
+          </div>
           <div>
             <div style={styles.logoText}>DENVAN HOLDINGS</div>
             <div style={styles.logoSub}>LLC</div>
@@ -92,17 +96,35 @@ const styles: Record<string, React.CSSProperties> = {
     textDecoration: "none",
   },
   logoMark: {
-    width: 44,
-    height: 44,
-    background: "#1B2A4A",
-    color: "#C5A55A",
+    width: 52,
+    height: 52,
+    background: "linear-gradient(145deg, #1B2A4A, #2A3F6A)",
     display: "flex",
     alignItems: "center",
     justifyContent: "center",
+    borderRadius: 10,
+    fontFamily: "'Playfair Display', serif",
+    boxShadow: "0 2px 8px rgba(27, 42, 74, 0.3)",
+    position: "relative",
+  },
+  logoD: {
     fontWeight: 700,
     fontSize: 22,
-    borderRadius: 8,
-    fontFamily: "'Playfair Display', serif",
+    color: "#FFFFFF",
+    letterSpacing: "-1px",
+  },
+  logoH: {
+    fontWeight: 700,
+    fontSize: 22,
+    color: "#C5A55A",
+    letterSpacing: "-1px",
+  },
+  logoDot: {
+    fontWeight: 700,
+    fontSize: 26,
+    color: "#C5A55A",
+    lineHeight: 0.6,
+    marginLeft: 1,
   },
   logoText: {
     fontWeight: 700,

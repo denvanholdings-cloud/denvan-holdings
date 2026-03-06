@@ -9,7 +9,11 @@ export default function Footer() {
         <div className="footer-top">
           <div>
             <div style={{ display: "flex", alignItems: "center", gap: 12, marginBottom: 16 }}>
-              <div style={styles.logoMark}>D</div>
+              <div style={styles.logoMark}>
+                <span style={styles.logoD}>D</span>
+                <span style={styles.logoH}>H</span>
+                <span style={styles.logoDot}>.</span>
+              </div>
               <div>
                 <div style={styles.logoText}>DENVAN HOLDINGS</div>
                 <div style={styles.logoSub}>LLC</div>
@@ -79,17 +83,34 @@ const styles: Record<string, React.CSSProperties> = {
     padding: "64px 0 0",
   },
   logoMark: {
-    width: 40,
-    height: 40,
-    background: "#C5A55A",
-    color: "#0F172A",
+    width: 48,
+    height: 48,
+    background: "linear-gradient(145deg, #C5A55A, #D4BA7A)",
     display: "flex",
     alignItems: "center",
     justifyContent: "center",
+    borderRadius: 10,
+    fontFamily: "'Playfair Display', serif",
+    boxShadow: "0 2px 8px rgba(197, 165, 90, 0.3)",
+  },
+  logoD: {
     fontWeight: 700,
     fontSize: 20,
-    borderRadius: 8,
-    fontFamily: "'Playfair Display', serif",
+    color: "#0F172A",
+    letterSpacing: "-1px",
+  },
+  logoH: {
+    fontWeight: 700,
+    fontSize: 20,
+    color: "#0F172A",
+    letterSpacing: "-1px",
+  },
+  logoDot: {
+    fontWeight: 700,
+    fontSize: 24,
+    color: "#0F172A",
+    lineHeight: 0.6,
+    marginLeft: 1,
   },
   logoText: {
     fontWeight: 700,

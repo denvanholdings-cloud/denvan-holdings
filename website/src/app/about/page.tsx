@@ -130,7 +130,7 @@ export default function About() {
           </div>
           <div style={{ maxWidth: 600, margin: "0 auto" }}>
             <div className="card text-center">
-              <div style={styles.avatar}>D</div>
+              <div style={styles.avatar}><span style={{ color: "#FFFFFF" }}>D</span><span style={{ color: "#C5A55A" }}>H</span><span style={{ color: "#C5A55A", fontSize: 32, lineHeight: 0.6 }}>.</span></div>
               <h3 style={{ fontSize: 20, fontWeight: 600, marginBottom: 4 }}>
                 Denvan Holdings Leadership
               </h3>
