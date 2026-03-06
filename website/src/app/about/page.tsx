@@ -106,7 +106,7 @@ export default function About() {
               },
             ].map((item) => (
               <div key={item.title} className="card">
-                <h3 style={{ fontSize: 18, fontWeight: 600, color: "#1B5E37", marginBottom: 12 }}>
+                <h3 style={{ fontSize: 18, fontWeight: 600, color: "#1B2A4A", marginBottom: 12 }}>
                   {item.title}
                 </h3>
                 <p style={{ fontSize: 14, color: "#64748B", lineHeight: 1.7 }}>
@@ -134,7 +134,7 @@ export default function About() {
               <h3 style={{ fontSize: 20, fontWeight: 600, marginBottom: 4 }}>
                 Denvan Holdings Leadership
               </h3>
-              <p style={{ color: "#B8942A", fontWeight: 500, fontSize: 14, marginBottom: 16 }}>
+              <p style={{ color: "#C5A55A", fontWeight: 500, fontSize: 14, marginBottom: 16 }}>
                 Executive Team
               </p>
               <p style={{ fontSize: 15, color: "#64748B", lineHeight: 1.7 }}>
@@ -157,7 +157,7 @@ export default function About() {
               <h2 style={{ fontSize: "2.25rem", fontWeight: 700, color: "#FFFFFF", marginBottom: 16 }}>
                 Our Vision
               </h2>
-              <p className="font-playfair" style={{ fontSize: 22, color: "#B8942A", lineHeight: 1.5, marginBottom: 24 }}>
+              <p className="font-playfair" style={{ fontSize: 22, color: "#C5A55A", lineHeight: 1.5, marginBottom: 24 }}>
                 To become a leading multi-industry holding company recognized for
                 operational excellence, strategic growth, and the development of
                 high-performing subsidiary businesses.
@@ -212,7 +212,7 @@ export default function About() {
 
 const styles: Record<string, React.CSSProperties> = {
   hero: {
-    background: "linear-gradient(135deg, #0D2818 0%, #1B5E37 100%)",
+    background: "linear-gradient(135deg, #0D2818 0%, #1B2A4A 100%)",
     padding: "80px 0",
     color: "#FFFFFF",
   },
@@ -260,7 +260,7 @@ const styles: Record<string, React.CSSProperties> = {
   statNumber: {
     fontSize: 36,
     fontWeight: 700,
-    color: "#1B5E37",
+    color: "#1B2A4A",
     marginBottom: 4,
   },
   statLabel: {
@@ -271,8 +271,8 @@ const styles: Record<string, React.CSSProperties> = {
   avatar: {
     width: 80,
     height: 80,
-    background: "linear-gradient(135deg, #1B5E37, #267A48)",
-    color: "#B8942A",
+    background: "linear-gradient(135deg, #1B2A4A, #2A3F6A)",
+    color: "#C5A55A",
     borderRadius: "50%",
     display: "flex",
     alignItems: "center",
@@ -292,7 +292,7 @@ const styles: Record<string, React.CSSProperties> = {
     width: 8,
     height: 8,
     borderRadius: "50%",
-    background: "#B8942A",
+    background: "#C5A55A",
     marginTop: 8,
     flexShrink: 0,
   },

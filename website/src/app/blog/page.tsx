@@ -34,7 +34,7 @@ export default function Blog() {
                 padding: "8px 20px",
                 borderRadius: 100,
                 border: cat === "All" ? "none" : "1px solid #E2E8F0",
-                background: cat === "All" ? "#1B5E37" : "transparent",
+                background: cat === "All" ? "#1B2A4A" : "transparent",
                 color: cat === "All" ? "#FFFFFF" : "#64748B",
                 fontSize: 14,
                 fontWeight: 500,
@@ -56,11 +56,11 @@ export default function Blog() {
             <Link href={`/blog/${featured.slug}`} style={{ textDecoration: "none", color: "inherit" }}>
               <div className="featured-post">
                 <div style={styles.featuredImage}>
-                  <span style={{ fontSize: 72, fontWeight: 700, color: "#B8942A", opacity: 0.3 }}>DH</span>
+                  <span style={{ fontSize: 72, fontWeight: 700, color: "#C5A55A", opacity: 0.3 }}>DH</span>
                 </div>
                 <div>
                   <div style={styles.badge}>{featured.category}</div>
-                  <h2 style={{ fontSize: 28, fontWeight: 700, color: "#1B5E37", marginBottom: 12, lineHeight: 1.3 }}>
+                  <h2 style={{ fontSize: 28, fontWeight: 700, color: "#1B2A4A", marginBottom: 12, lineHeight: 1.3 }}>
                     {featured.title}
                   </h2>
                   <p style={{ color: "#64748B", lineHeight: 1.7, marginBottom: 20, fontSize: 16 }}>
@@ -82,7 +82,7 @@ export default function Blog() {
       {/* Post Grid */}
       <section className="section section-light" style={{ paddingTop: 0 }}>
         <div className="container" style={{ paddingTop: 64 }}>
-          <h2 style={{ fontSize: 24, fontWeight: 600, color: "#1B5E37", marginBottom: 32 }}>
+          <h2 style={{ fontSize: 24, fontWeight: 600, color: "#1B2A4A", marginBottom: 32 }}>
             Recent Articles
           </h2>
           <div className="grid-3">
@@ -96,11 +96,11 @@ export default function Blog() {
                     alignItems: "center",
                     justifyContent: "center",
                   }}>
-                    <span style={{ fontSize: 36, fontWeight: 700, color: "#B8942A", opacity: 0.3 }}>DH</span>
+                    <span style={{ fontSize: 36, fontWeight: 700, color: "#C5A55A", opacity: 0.3 }}>DH</span>
                   </div>
                   <div style={{ padding: 24 }}>
                     <div style={{ ...styles.badge, marginBottom: 12 }}>{post.category}</div>
-                    <h3 style={{ fontSize: 17, fontWeight: 600, color: "#1B5E37", marginBottom: 8, lineHeight: 1.4 }}>
+                    <h3 style={{ fontSize: 17, fontWeight: 600, color: "#1B2A4A", marginBottom: 8, lineHeight: 1.4 }}>
                       {post.title}
                     </h3>
                     <p style={{ fontSize: 14, color: "#64748B", lineHeight: 1.6, marginBottom: 16 }}>
@@ -138,7 +138,7 @@ export default function Blog() {
               { title: "Investment & Finance", desc: "Capital allocation, revenue models, and financial planning for diversified portfolios." },
             ].map((topic) => (
               <div key={topic.title} style={styles.topicCard}>
-                <h3 style={{ fontSize: 16, fontWeight: 600, color: "#1B5E37", marginBottom: 8 }}>{topic.title}</h3>
+                <h3 style={{ fontSize: 16, fontWeight: 600, color: "#1B2A4A", marginBottom: 8 }}>{topic.title}</h3>
                 <p style={{ fontSize: 14, color: "#64748B", lineHeight: 1.6 }}>{topic.desc}</p>
               </div>
             ))}
@@ -176,7 +176,7 @@ export default function Blog() {
 
 const styles: Record<string, React.CSSProperties> = {
   hero: {
-    background: "linear-gradient(135deg, #0D2818 0%, #1B5E37 100%)",
+    background: "linear-gradient(135deg, #0F172A 0%, #1B2A4A 100%)",
     padding: "100px 0 80px",
     color: "#FFFFFF",
     position: "relative",
@@ -185,7 +185,7 @@ const styles: Record<string, React.CSSProperties> = {
   heroOverlay: {
     position: "absolute",
     inset: 0,
-    background: "radial-gradient(ellipse at 70% 50%, rgba(184, 148, 42, 0.06) 0%, transparent 60%)",
+    background: "radial-gradient(ellipse at 70% 50%, rgba(197, 165, 90, 0.06) 0%, transparent 60%)",
     pointerEvents: "none",
   },
   breadcrumb: { fontSize: 14, color: "#64748B", marginBottom: 16 },
@@ -193,7 +193,7 @@ const styles: Record<string, React.CSSProperties> = {
   heroText: { fontSize: 18, color: "#94A3B8", maxWidth: 640, lineHeight: 1.7 },
   featuredImage: {
     minHeight: 320,
-    background: "linear-gradient(135deg, #1B5E37, #267A48)",
+    background: "linear-gradient(135deg, #1B2A4A, #2A3F6A)",
     borderRadius: 16,
     display: "flex",
     alignItems: "center",
@@ -203,7 +203,7 @@ const styles: Record<string, React.CSSProperties> = {
     display: "inline-block",
     padding: "4px 12px",
     background: "#F1F5F9",
-    color: "#1B5E37",
+    color: "#1B2A4A",
     borderRadius: 100,
     fontSize: 12,
     fontWeight: 600,
@@ -214,7 +214,7 @@ const styles: Record<string, React.CSSProperties> = {
     marginTop: 16,
     fontSize: 15,
     fontWeight: 600,
-    color: "#B8942A",
+    color: "#C5A55A",
   },
   topicCard: {
     padding: 24,

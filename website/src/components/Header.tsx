@@ -2,7 +2,6 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import Image from "next/image";
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -11,14 +10,11 @@ export default function Header() {
     <header style={styles.header}>
       <div className="container" style={styles.inner}>
         <Link href="/" style={styles.logo}>
-          <Image
-            src="/denvan-holdings/images/logo.png"
-            alt="Denvan Holdings"
-            width={180}
-            height={150}
-            style={{ objectFit: "contain", height: 70, width: "auto" }}
-            priority
-          />
+          <div style={styles.logoMark}>D</div>
+          <div>
+            <div style={styles.logoText}>DENVAN HOLDINGS</div>
+            <div style={styles.logoSub}>LLC</div>
+          </div>
         </Link>
 
         <nav style={styles.nav}>
@@ -87,12 +83,39 @@ const styles: Record<string, React.CSSProperties> = {
     display: "flex",
     alignItems: "center",
     justifyContent: "space-between",
-    height: 90,
+    height: 80,
   },
   logo: {
     display: "flex",
     alignItems: "center",
+    gap: 12,
     textDecoration: "none",
+  },
+  logoMark: {
+    width: 44,
+    height: 44,
+    background: "#1B2A4A",
+    color: "#C5A55A",
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+    fontWeight: 700,
+    fontSize: 22,
+    borderRadius: 8,
+    fontFamily: "'Playfair Display', serif",
+  },
+  logoText: {
+    fontWeight: 700,
+    fontSize: 18,
+    color: "#1B2A4A",
+    letterSpacing: "0.05em",
+    lineHeight: 1.2,
+  },
+  logoSub: {
+    fontSize: 11,
+    color: "#64748B",
+    letterSpacing: "0.15em",
+    fontWeight: 500,
   },
   nav: {
     display: "flex",
@@ -102,7 +125,7 @@ const styles: Record<string, React.CSSProperties> = {
   navLink: {
     fontSize: 15,
     fontWeight: 500,
-    color: "#1B5E37",
+    color: "#1B2A4A",
     transition: "color 0.2s",
   },
   mobileToggle: {
@@ -118,7 +141,7 @@ const styles: Record<string, React.CSSProperties> = {
     display: "block",
     width: 26,
     height: 2.5,
-    background: "#1B5E37",
+    background: "#1B2A4A",
     borderRadius: 2,
     transition: "all 0.3s",
   },
@@ -133,7 +156,7 @@ const styles: Record<string, React.CSSProperties> = {
     padding: "14px 0",
     fontSize: 17,
     fontWeight: 500,
-    color: "#1B5E37",
+    color: "#1B2A4A",
     borderBottom: "1px solid #F1F5F9",
   },
 };

@@ -42,7 +42,7 @@ export default function Investors() {
               </ul>
             </div>
             <div style={styles.highlightCard}>
-              <h3 style={{ fontSize: 20, fontWeight: 600, color: "#1B5E37", marginBottom: 24 }}>
+              <h3 style={{ fontSize: 20, fontWeight: 600, color: "#1B2A4A", marginBottom: 24 }}>
                 Portfolio at a Glance
               </h3>
               {[
@@ -54,7 +54,7 @@ export default function Investors() {
               ].map((item) => (
                 <div key={item.label} style={styles.highlightRow}>
                   <span style={{ color: "#64748B", fontSize: 14 }}>{item.label}</span>
-                  <span style={{ fontWeight: 600, color: "#1B5E37", fontSize: 14 }}>{item.value}</span>
+                  <span style={{ fontWeight: 600, color: "#1B2A4A", fontSize: 14 }}>{item.value}</span>
                 </div>
               ))}
             </div>
@@ -106,10 +106,10 @@ export default function Investors() {
               },
             ].map((phase) => (
               <div key={phase.phase} className="card" style={{ textAlign: "left" }}>
-                <div style={{ color: "#B8942A", fontWeight: 600, fontSize: 13, marginBottom: 4 }}>
+                <div style={{ color: "#C5A55A", fontWeight: 600, fontSize: 13, marginBottom: 4 }}>
                   {phase.phase} -- {phase.period}
                 </div>
-                <h3 style={{ fontSize: 22, fontWeight: 600, color: "#1B5E37", marginBottom: 16 }}>
+                <h3 style={{ fontSize: 22, fontWeight: 600, color: "#1B2A4A", marginBottom: 16 }}>
                   {phase.title}
                 </h3>
                 <ul style={{ ...styles.list, marginBottom: 0 }}>
@@ -185,7 +185,7 @@ export default function Investors() {
 
 const styles: Record<string, React.CSSProperties> = {
   hero: {
-    background: "linear-gradient(135deg, #0D2818 0%, #1B5E37 100%)",
+    background: "linear-gradient(135deg, #0F172A 0%, #1B2A4A 100%)",
     padding: "80px 0",
     color: "#FFFFFF",
   },

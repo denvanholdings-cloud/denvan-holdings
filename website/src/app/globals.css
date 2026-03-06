@@ -1,15 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;700&display=swap');
 
 :root {
-  --navy: #1B5E37;
-  --gold: #B8942A;
+  --navy: #1B2A4A;
+  --gold: #C5A55A;
   --white: #FFFFFF;
   --slate: #64748B;
   --light-gray: #F1F5F9;
-  --charcoal: #0D2818;
-  --gold-light: #D4AD3A;
-  --gold-dark: #96780E;
-  --navy-light: #267A48;
+  --charcoal: #0F172A;
+  --gold-light: #D4BA7A;
+  --gold-dark: #A68B3E;
+  --navy-light: #2A3F6A;
 }
 
 * {
@@ -218,13 +218,13 @@ img {
 .btn-primary {
   background: linear-gradient(135deg, var(--gold), var(--gold-light));
   color: var(--charcoal);
-  box-shadow: 0 2px 8px rgba(184, 148, 42, 0.3);
+  box-shadow: 0 2px 8px rgba(197, 165, 90, 0.3);
 }
 
 .btn-primary:hover {
   background: linear-gradient(135deg, var(--gold-dark), var(--gold));
   transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(184, 148, 42, 0.4);
+  box-shadow: 0 6px 20px rgba(197, 165, 90, 0.4);
 }
 
 .btn-secondary {
@@ -251,7 +251,7 @@ img {
   background: var(--navy);
   color: var(--white);
   transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(27, 94, 55, 0.3);
+  box-shadow: 0 4px 12px rgba(27, 42, 74, 0.3);
 }
 
 /* ========== SECTIONS ========== */
@@ -275,7 +275,7 @@ img {
   right: -20%;
   width: 600px;
   height: 600px;
-  background: radial-gradient(circle, rgba(27, 94, 55, 0.15) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(42, 63, 106, 0.15) 0%, transparent 70%);
   pointer-events: none;
 }
 
@@ -361,7 +361,7 @@ img {
   grid-template-columns: 1fr 2fr;
   gap: 64px;
   padding-bottom: 48px;
-  border-bottom: 1px solid #1B4A2E;
+  border-bottom: 1px solid #1E293B;
 }
 
 .footer-links {
@@ -451,7 +451,7 @@ img {
 .form-select:focus {
   outline: none;
   border-color: var(--navy);
-  box-shadow: 0 0 0 3px rgba(27, 94, 55, 0.12);
+  box-shadow: 0 0 0 3px rgba(27, 42, 74, 0.12);
 }
 
 .form-textarea {
@@ -575,11 +575,6 @@ img {
     flex-direction: column;
     gap: 12px;
     text-align: center;
-  }
-
-  /* Header logo smaller on mobile */
-  header img {
-    height: 50px !important;
   }
 
   /* Article layout stacks on mobile */

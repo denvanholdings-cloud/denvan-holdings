@@ -1,7 +1,6 @@
 "use client";
 
 import Link from "next/link";
-import Image from "next/image";
 import AnimateOnScroll from "@/components/AnimateOnScroll";
 import Counter from "@/components/Counter";
 
@@ -18,7 +17,7 @@ export default function Home() {
           </div>
           <h1 className="hero-title" style={{ ...styles.heroTitle, animation: "fadeInUp 0.8s ease-out 0.15s both" }}>
             Building Businesses.<br />
-            <span className="font-playfair" style={{ color: "#B8942A" }}>Creating Legacy.</span>
+            <span className="font-playfair" style={{ color: "#C5A55A" }}>Creating Legacy.</span>
           </h1>
           <p style={{ ...styles.heroText, animation: "fadeInUp 0.8s ease-out 0.3s both" }}>
             Denvan Holdings LLC owns and manages a diversified portfolio of businesses
@@ -69,7 +68,7 @@ export default function Home() {
             {[
               {
                 icon: (
-                  <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#B8942A" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#C5A55A" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                     <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/>
                   </svg>
                 ),
@@ -78,7 +77,7 @@ export default function Home() {
               },
               {
                 icon: (
-                  <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#B8942A" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#C5A55A" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                     <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/>
                   </svg>
                 ),
@@ -87,7 +86,7 @@ export default function Home() {
               },
               {
                 icon: (
-                  <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#B8942A" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#C5A55A" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                     <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>
                   </svg>
                 ),
@@ -96,7 +95,7 @@ export default function Home() {
               },
               {
                 icon: (
-                  <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#B8942A" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#C5A55A" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                     <rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/>
                   </svg>
                 ),
@@ -105,7 +104,7 @@ export default function Home() {
               },
               {
                 icon: (
-                  <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#B8942A" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#C5A55A" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                     <line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
                   </svg>
                 ),
@@ -114,7 +113,7 @@ export default function Home() {
               },
               {
                 icon: (
-                  <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#B8942A" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#C5A55A" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                     <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/>
                   </svg>
                 ),
@@ -179,7 +178,7 @@ export default function Home() {
                 title: "Diverse Industries",
                 desc: "We build and manage businesses across a wide range of sectors -- adapting our expertise to each unique market.",
                 icon: (
-                  <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#1B5E37" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#1B2A4A" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                     <circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
                   </svg>
                 ),
@@ -188,7 +187,7 @@ export default function Home() {
                 title: "Growing Portfolio",
                 desc: "Our portfolio continues to expand as we launch new subsidiaries and explore strategic acquisitions in emerging sectors.",
                 icon: (
-                  <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#1B5E37" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#1B2A4A" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                     <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/>
                   </svg>
                 ),
@@ -197,15 +196,15 @@ export default function Home() {
                 title: "Strategic Expansion",
                 desc: "Every new venture is carefully evaluated for market fit, growth potential, and alignment with our corporate vision.",
                 icon: (
-                  <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#1B5E37" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#1B2A4A" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                     <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
                   </svg>
                 ),
               },
             ].map((item) => (
               <div key={item.title} className="card">
-                <div style={{ ...styles.cardIcon, background: "rgba(27, 94, 55, 0.08)" }}>{item.icon}</div>
-                <h3 style={{ fontSize: 18, fontWeight: 600, marginBottom: 8, color: "#1B5E37" }}>{item.title}</h3>
+                <div style={{ ...styles.cardIcon, background: "rgba(27, 42, 74, 0.08)" }}>{item.icon}</div>
+                <h3 style={{ fontSize: 18, fontWeight: 600, marginBottom: 8, color: "#1B2A4A" }}>{item.title}</h3>
                 <p style={{ color: "#64748B", fontSize: 14, lineHeight: 1.6 }}>{item.desc}</p>
               </div>
             ))}
@@ -247,7 +246,7 @@ export default function Home() {
                   { name: "Resilience", desc: "Diversified strength through any market" },
                 ].map((value) => (
                   <div key={value.name} style={styles.valueItem}>
-                    <h4 style={{ fontWeight: 600, color: "#1B5E37", marginBottom: 4 }}>{value.name}</h4>
+                    <h4 style={{ fontWeight: 600, color: "#1B2A4A", marginBottom: 4 }}>{value.name}</h4>
                     <p style={{ fontSize: 14, color: "#64748B" }}>{value.desc}</p>
                   </div>
                 ))}
@@ -262,46 +261,18 @@ export default function Home() {
         <div className="container text-center">
           <AnimateOnScroll animation="fade-up">
             <div style={{ maxWidth: 700, margin: "0 auto" }}>
-              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#B8942A" strokeWidth="1.5" style={{ marginBottom: 24, opacity: 0.6 }}>
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#C5A55A" strokeWidth="1.5" style={{ marginBottom: 24, opacity: 0.6 }}>
                 <path d="M3 21c3 0 7-1 7-8V5c0-1.25-.756-2.017-2-2H4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 1-1 2-2 2s-1 .008-1 1.031V20c0 1 0 1 1 1z"/>
                 <path d="M15 21c3 0 7-1 7-8V5c0-1.25-.757-2.017-2-2h-4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2h.75c0 2.25.25 4-2.75 4v3c0 1 0 1 1 1z"/>
               </svg>
-              <p className="font-playfair" style={{ fontSize: 24, color: "#1B5E37", lineHeight: 1.5, marginBottom: 24 }}>
+              <p className="font-playfair" style={{ fontSize: 24, color: "#1B2A4A", lineHeight: 1.5, marginBottom: 24 }}>
                 We don&apos;t just manage businesses -- we build ecosystems where
                 entrepreneurship thrives, innovation accelerates, and lasting value is
                 created for every stakeholder.
               </p>
-              <p style={{ color: "#B8942A", fontWeight: 600, fontSize: 16 }}>Denvan Holdings Leadership</p>
+              <p style={{ color: "#C5A55A", fontWeight: 600, fontSize: 16 }}>Denvan Holdings Leadership</p>
               <p style={{ color: "#94A3B8", fontSize: 14 }}>Austin, Texas</p>
             </div>
-          </AnimateOnScroll>
-        </div>
-      </section>
-
-      {/* Logo Banner */}
-      <section style={styles.logoBanner}>
-        <div className="container text-center">
-          <AnimateOnScroll animation="scale">
-            <Image
-              src="/denvan-holdings/images/logo.png"
-              alt="Denvan Holdings"
-              width={300}
-              height={250}
-              style={{
-                margin: "0 auto 24px",
-                display: "block",
-                objectFit: "contain",
-                height: 200,
-                width: "auto",
-                borderRadius: 16,
-              }}
-            />
-            <p className="font-playfair" style={{ fontSize: 28, color: "#B8942A", marginBottom: 8 }}>
-              Building Businesses. Creating Legacy.
-            </p>
-            <p style={{ color: "#94A3B8", fontSize: 16 }}>
-              A multi-industry holding company based in Austin, Texas
-            </p>
           </AnimateOnScroll>
         </div>
       </section>
@@ -332,7 +303,7 @@ export default function Home() {
 
 const styles: Record<string, React.CSSProperties> = {
   hero: {
-    background: "linear-gradient(135deg, #0D2818 0%, #1B5E37 40%, #267A48 100%)",
+    background: "linear-gradient(135deg, #0F172A 0%, #1B2A4A 40%, #2A3F6A 100%)",
     color: "#FFFFFF",
     padding: "140px 0 0",
     position: "relative",
@@ -345,7 +316,7 @@ const styles: Record<string, React.CSSProperties> = {
   heroOverlay: {
     position: "absolute",
     inset: 0,
-    background: "radial-gradient(ellipse at 30% 50%, rgba(184, 148, 42, 0.08) 0%, transparent 60%)",
+    background: "radial-gradient(ellipse at 30% 50%, rgba(197, 165, 90, 0.08) 0%, transparent 60%)",
     pointerEvents: "none",
   },
   heroGlow: {
@@ -354,7 +325,7 @@ const styles: Record<string, React.CSSProperties> = {
     right: "-10%",
     width: 600,
     height: 600,
-    background: "radial-gradient(circle, rgba(27, 94, 55, 0.3) 0%, transparent 70%)",
+    background: "radial-gradient(circle, rgba(42, 63, 106, 0.3) 0%, transparent 70%)",
     pointerEvents: "none",
     animation: "pulse 4s ease-in-out infinite",
   },
@@ -370,13 +341,13 @@ const styles: Record<string, React.CSSProperties> = {
   heroBadge: {
     display: "inline-block",
     padding: "8px 20px",
-    background: "rgba(184, 148, 42, 0.15)",
-    color: "#B8942A",
+    background: "rgba(197, 165, 90, 0.15)",
+    color: "#C5A55A",
     borderRadius: 100,
     fontSize: 14,
     fontWeight: 500,
     marginBottom: 24,
-    border: "1px solid rgba(184, 148, 42, 0.3)",
+    border: "1px solid rgba(197, 165, 90, 0.3)",
     backdropFilter: "blur(8px)",
   },
   heroTitle: {
@@ -411,7 +382,7 @@ const styles: Record<string, React.CSSProperties> = {
   statValue: {
     fontSize: 28,
     fontWeight: 700,
-    color: "#B8942A",
+    color: "#C5A55A",
     marginBottom: 4,
   },
   statLabel: {
@@ -424,7 +395,7 @@ const styles: Record<string, React.CSSProperties> = {
   cardIcon: {
     width: 52,
     height: 52,
-    background: "rgba(184, 148, 42, 0.1)",
+    background: "rgba(197, 165, 90, 0.1)",
     display: "flex",
     alignItems: "center",
     justifyContent: "center",
@@ -435,7 +406,7 @@ const styles: Record<string, React.CSSProperties> = {
     fontSize: 18,
     fontWeight: 600,
     marginBottom: 8,
-    color: "#1B5E37",
+    color: "#1B2A4A",
   },
   cardDesc: {
     fontSize: 14,
@@ -452,7 +423,7 @@ const styles: Record<string, React.CSSProperties> = {
   stepNumber: {
     fontSize: 36,
     fontWeight: 700,
-    color: "#B8942A",
+    color: "#C5A55A",
     marginBottom: 12,
     fontFamily: "'Playfair Display', serif",
   },
@@ -462,12 +433,8 @@ const styles: Record<string, React.CSSProperties> = {
     borderRadius: 12,
     transition: "all 0.3s ease",
   },
-  logoBanner: {
-    background: "linear-gradient(135deg, #0D2818, #1B5E37)",
-    padding: "80px 0",
-  },
   cta: {
-    background: "linear-gradient(135deg, #0D2818 0%, #1B5E37 50%, #0D2818 100%)",
+    background: "linear-gradient(135deg, #0F172A 0%, #1B2A4A 50%, #0F172A 100%)",
     backgroundSize: "200% 200%",
     animation: "gradientShift 8s ease infinite",
     padding: "96px 0",
@@ -480,7 +447,7 @@ const styles: Record<string, React.CSSProperties> = {
     left: "30%",
     width: 500,
     height: 500,
-    background: "radial-gradient(circle, rgba(184, 148, 42, 0.1) 0%, transparent 70%)",
+    background: "radial-gradient(circle, rgba(197, 165, 90, 0.1) 0%, transparent 70%)",
     pointerEvents: "none",
   },
 };

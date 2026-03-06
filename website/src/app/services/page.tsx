@@ -92,7 +92,7 @@ export default function Services() {
               },
             ].map((service) => (
               <div key={service.title} className="card">
-                <h3 style={{ fontSize: 20, fontWeight: 600, color: "#1B5E37", marginBottom: 16 }}>
+                <h3 style={{ fontSize: 20, fontWeight: 600, color: "#1B2A4A", marginBottom: 16 }}>
                   {service.title}
                 </h3>
                 <ul style={styles.serviceList}>
@@ -140,7 +140,7 @@ export default function Services() {
               },
             ].map((item) => (
               <div key={item.title} className="card">
-                <h3 style={{ fontSize: 20, fontWeight: 600, color: "#1B5E37", marginBottom: 12 }}>
+                <h3 style={{ fontSize: 20, fontWeight: 600, color: "#1B2A4A", marginBottom: 12 }}>
                   {item.title}
                 </h3>
                 <p style={{ color: "#64748B", lineHeight: 1.7 }}>{item.desc}</p>
@@ -166,7 +166,7 @@ export default function Services() {
             ].map((item) => (
               <div key={item.step} style={styles.stepCard}>
                 <div style={styles.stepNumber}>{item.step}</div>
-                <h3 style={{ fontSize: 18, fontWeight: 600, color: "#1B5E37", marginBottom: 8 }}>{item.title}</h3>
+                <h3 style={{ fontSize: 18, fontWeight: 600, color: "#1B2A4A", marginBottom: 8 }}>{item.title}</h3>
                 <p style={{ fontSize: 14, color: "#64748B" }}>{item.desc}</p>
               </div>
             ))}
@@ -196,7 +196,7 @@ export default function Services() {
 
 const styles: Record<string, React.CSSProperties> = {
   hero: {
-    background: "linear-gradient(135deg, #0D2818 0%, #1B5E37 100%)",
+    background: "linear-gradient(135deg, #0F172A 0%, #1B2A4A 100%)",
     padding: "80px 0",
     color: "#FFFFFF",
   },
@@ -231,11 +231,11 @@ const styles: Record<string, React.CSSProperties> = {
   stepNumber: {
     fontSize: 36,
     fontWeight: 700,
-    color: "#B8942A",
+    color: "#C5A55A",
     marginBottom: 12,
   },
   cta: {
-    background: "linear-gradient(135deg, #0D2818 0%, #1B5E37 100%)",
+    background: "linear-gradient(135deg, #0F172A 0%, #1B2A4A 100%)",
     padding: "96px 0",
   },
 };

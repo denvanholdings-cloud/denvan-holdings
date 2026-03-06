@@ -1,5 +1,4 @@
 import Link from "next/link";
-import Image from "next/image";
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -9,19 +8,12 @@ export default function Footer() {
       <div className="container">
         <div className="footer-top">
           <div>
-            <div style={{ marginBottom: 20 }}>
-              <Image
-                src="/denvan-holdings/images/logo.png"
-                alt="Denvan Holdings"
-                width={200}
-                height={166}
-                style={{
-                  objectFit: "contain",
-                  height: 100,
-                  width: "auto",
-                  borderRadius: 12,
-                }}
-              />
+            <div style={{ display: "flex", alignItems: "center", gap: 12, marginBottom: 16 }}>
+              <div style={styles.logoMark}>D</div>
+              <div>
+                <div style={styles.logoText}>DENVAN HOLDINGS</div>
+                <div style={styles.logoSub}>LLC</div>
+              </div>
             </div>
             <p style={styles.tagline} className="font-playfair">
               Building Businesses. Creating Legacy.
@@ -82,12 +74,38 @@ export default function Footer() {
 
 const styles: Record<string, React.CSSProperties> = {
   footer: {
-    background: "#0D2818",
+    background: "#0F172A",
     color: "#94A3B8",
     padding: "64px 0 0",
   },
+  logoMark: {
+    width: 40,
+    height: 40,
+    background: "#C5A55A",
+    color: "#0F172A",
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+    fontWeight: 700,
+    fontSize: 20,
+    borderRadius: 8,
+    fontFamily: "'Playfair Display', serif",
+  },
+  logoText: {
+    fontWeight: 700,
+    fontSize: 16,
+    color: "#FFFFFF",
+    letterSpacing: "0.05em",
+    lineHeight: 1.2,
+  },
+  logoSub: {
+    fontSize: 10,
+    color: "#64748B",
+    letterSpacing: "0.15em",
+    fontWeight: 500,
+  },
   tagline: {
-    color: "#B8942A",
+    color: "#C5A55A",
     fontSize: 18,
     marginBottom: 12,
     fontStyle: "italic",
