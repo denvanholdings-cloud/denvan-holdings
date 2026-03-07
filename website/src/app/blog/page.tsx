@@ -1,13 +1,20 @@
 "use client";
 
+import { useState } from "react";
 import Link from "next/link";
 import AnimateOnScroll from "@/components/AnimateOnScroll";
 import PostImage from "@/components/PostImage";
 import { posts, categories } from "./posts";
 
 export default function Blog() {
-  const featured = posts[0];
-  const rest = posts.slice(1);
+  const [activeCategory, setActiveCategory] = useState("All");
+
+  const filteredPosts = activeCategory === "All"
+    ? posts
+    : posts.filter((p) => p.category === activeCategory);
+
+  const featured = filteredPosts[0];
+  const rest = filteredPosts.slice(1);
 
   return (
     <>
@@ -31,12 +38,13 @@ export default function Blog() {
           {categories.map((cat) => (
             <button
               key={cat}
+              onClick={() => setActiveCategory(cat)}
               style={{
                 padding: "8px 20px",
                 borderRadius: 100,
-                border: cat === "All" ? "none" : "1px solid #E2E8F0",
-                background: cat === "All" ? "#1B2A4A" : "transparent",
-                color: cat === "All" ? "#FFFFFF" : "#64748B",
+                border: cat === activeCategory ? "none" : "1px solid #E2E8F0",
+                background: cat === activeCategory ? "#1B2A4A" : "transparent",
+                color: cat === activeCategory ? "#FFFFFF" : "#64748B",
                 fontSize: 14,
                 fontWeight: 500,
                 cursor: "pointer",
@@ -51,38 +59,47 @@ export default function Blog() {
       </section>
 
       {/* Featured Post */}
-      <section className="section">
-        <div className="container">
-          <AnimateOnScroll animation="fade-up">
-            <Link href={`/blog/${featured.slug}`} style={{ textDecoration: "none", color: "inherit" }}>
-              <div className="featured-post">
-                <PostImage category={featured.category} height={320} size="large" />
-                <div>
-                  <div style={styles.badge}>{featured.category}</div>
-                  <h2 style={{ fontSize: 28, fontWeight: 700, color: "#1B2A4A", marginBottom: 12, lineHeight: 1.3 }}>
-                    {featured.title}
-                  </h2>
-                  <p style={{ color: "#64748B", lineHeight: 1.7, marginBottom: 20, fontSize: 16 }}>
-                    {featured.excerpt}
-                  </p>
-                  <div style={{ display: "flex", alignItems: "center", gap: 16, color: "#94A3B8", fontSize: 14, flexWrap: "wrap" }}>
-                    <span>{featured.date}</span>
-                    <span>|</span>
-                    <span>{featured.readTime}</span>
+      {featured ? (
+        <section className="section">
+          <div className="container">
+            <AnimateOnScroll animation="fade-up">
+              <Link href={`/blog/${featured.slug}`} style={{ textDecoration: "none", color: "inherit" }}>
+                <div className="featured-post">
+                  <PostImage category={featured.category} height={320} size="large" />
+                  <div>
+                    <div style={styles.badge}>{featured.category}</div>
+                    <h2 style={{ fontSize: 28, fontWeight: 700, color: "#1B2A4A", marginBottom: 12, lineHeight: 1.3 }}>
+                      {featured.title}
+                    </h2>
+                    <p style={{ color: "#64748B", lineHeight: 1.7, marginBottom: 20, fontSize: 16 }}>
+                      {featured.excerpt}
+                    </p>
+                    <div style={{ display: "flex", alignItems: "center", gap: 16, color: "#94A3B8", fontSize: 14, flexWrap: "wrap" }}>
+                      <span>{featured.date}</span>
+                      <span>|</span>
+                      <span>{featured.readTime}</span>
+                    </div>
+                    <span style={styles.readMore}>Read Full Article &rarr;</span>
                   </div>
-                  <span style={styles.readMore}>Read Full Article &rarr;</span>
                 </div>
-              </div>
-            </Link>
-          </AnimateOnScroll>
-        </div>
-      </section>
+              </Link>
+            </AnimateOnScroll>
+          </div>
+        </section>
+      ) : (
+        <section className="section">
+          <div className="container text-center">
+            <p style={{ color: "#64748B", fontSize: 18 }}>No articles found in this category.</p>
+          </div>
+        </section>
+      )}
 
       {/* Post Grid */}
+      {rest.length > 0 && (
       <section className="section section-light" style={{ paddingTop: 0 }}>
         <div className="container" style={{ paddingTop: 64 }}>
           <h2 style={{ fontSize: 24, fontWeight: 600, color: "#1B2A4A", marginBottom: 32 }}>
-            Recent Articles
+            {activeCategory === "All" ? "Recent Articles" : `More in ${activeCategory}`}
           </h2>
           <div className="grid-3">
             {rest.map((post) => (
@@ -108,6 +125,7 @@ export default function Blog() {
           </div>
         </div>
       </section>
+      )}
 
       {/* Key Topics */}
       <section className="section">
